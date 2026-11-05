@@ -1,6 +1,6 @@
 site_name: AULA ATECA
 site_description: Documentación del Aula de Tecnología Aplicada (ATECA) del CIFP Villa de Agüimes
-site_url: https://aulateca.github.io/ateca/
+site_url: https://aulaateca.github.io/ateca/
 repo_url: https://github.com/AulaAteca/ateca
 
 theme:
@@ -21,29 +21,25 @@ theme:
            icon: material/toggle-switch
            name: Modo claro
 nav:
-   - Inicio: index.md
-   - Gafas VR / AR:
-        - Realidad Virtual y Aumentada: gafas/realidad-virtual-aumentada.md
-        - Manual Meta Quest 2 y SimulWind: gafas/meta-quest-2.md
-        - Apps VR gratuitas por familia profesional: gafas/apps-vr-gratuitas.md
-   - Impresora 3D:
-        - Diseño y Fabricación 3D: impresora/diseno-fabricacion-3d.md
-        - Repositorios de diseños 3D gratuitos: impresora/repositorios-disenos-3d.md
-   - Radio y Audio:
-        - Radio y Audio: radio/radio-audio.md
-   - Vídeo y Streaming:
-        - Vídeo y Streaming: video/video-streaming.md
+   - 🏫 Inicio: index.md
+   - 🕶️ Gafas VR / AR:
+        - VR y AR en el aula: gafas/realidad-virtual-aumentada.md
+        - Manual Quest 2: gafas/meta-quest-2.md
+        - SimulWind en Quest 2: gafas/simulwind.md
+        - Apps VR gratuitas: gafas/apps-vr-gratuitas.md
+   - 🖨️ Impresora 3D:
+        - Diseño e impresión 3D: impresora/diseno-fabricacion-3d.md
+        - Diseños 3D gratuitos: impresora/repositorios-disenos-3d.md
+   - 🎙️ Radio y Audio:
+        - Radio y audio: radio/radio-audio.md
+   - 🎥 Vídeo y Streaming:
+        - Vídeo y streaming: video/video-streaming.md
+        - ATEM Mini Pro (croma): video/atem-mini-pro-croma.md
         - OBS Studio: video/obs.md
-   - Imagen:
-        - Edición de Imagen e Impresión: imagen/edicion-imagen-impresion.md
-   - Domótica:
-        - Domótica y Automatización: domotica/domotica-automatizacion.md
-   - Robótica y dron:
-        - Comparativa y presupuesto: robotica/comparativa-robotica-dron.md
-        - Propuesta de compra: robotica/propuesta-compra-robotica-dron.md
-   - Proyecto ATECA:
-        - Comparativa de webs de Aulas ATECA: proyecto/comparativa-webs-ateca.md
-        - Plan de mejora de la web ATECA: proyecto/plan-mejora-web-ateca.md
+   - 🖼️ Imagen:
+        - Edición e impresión: imagen/edicion-imagen-impresion.md
+   - 🏠 Domótica:
+        - Sonos y domótica: domotica/domotica-automatizacion.md
 
 plugins:
    - search
@@ -54,6 +50,7 @@ extra_css:
    - assets/css/cards.css
    - assets/css/seccion.css
    - assets/css/practica.css
+   - assets/css/videos.css
 
 extra_javascript:
    - assets/javascripts/nav-toggle.js
@@ -73,3 +70,6 @@ markdown_extensions:
         alternate_style: true
    - pymdownx.tasklist:
         custom_checkbox: true
+   - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg

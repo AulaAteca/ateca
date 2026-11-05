@@ -4,7 +4,7 @@
 ## 1. Instalar OBS { .seccion }
 Descarga desde [obsproject.com](https://obsproject.com){target="_blank"} → instala → al abrirlo por primera vez el **Asistente de configuración automática** te preguntará si quieres optimizar para *streaming* o *grabación*. **Déjalo hacer su trabajo.**
 
-![obs](../assets/img/ate/obs-01.png){ width="700" }
+![obs](../assets/img/vid/obs-01.png){ width="700" }
 
 1. **Barra de Menús** para configurar distintos aspectos del programa.
 2. **Lienzo** La pantalla grande de previsualización en tiempo real. Lo que aparece ahí es exactamente lo que saldrá en tu vídeo. Puedes arrastrar y redimensionar las fuentes directamente sobre él.
@@ -20,7 +20,7 @@ Una vez instalado, debemos comenzar con la configuración, para ello, iremos a *
 ### Configurar emisión
 En el apartado **Emisión** dentro de los Ajustes, puedes seleccionar tu plataforma de streaming desde el menú desplegable Servicio para vincularla automáticamente (mediante Conectar Cuenta) o configurarla de forma manual (usando la Clave de Emisión). Al elegir una plataforma, se habilitarán opciones adicionales, siendo fundamental marcar la casilla para ignorar las recomendaciones del servicio si tu intención es aplicar tus propios parámetros de transmisión personalizados más adelante.
 
-![obs](../assets/img/ate/obs-02.png){ width="700" }
+![obs](../assets/img/vid/obs-02.png){ width="700" }
 
 ### Configurar salida
 Para ajustar rápidamente la calidad de tus directos y vídeos, ve a la pestaña Salida y selecciona el modo Sencillo. Desde ahí, puedes configurar dos bloques principales:
@@ -30,7 +30,7 @@ Para ajustar rápidamente la calidad de tus directos y vídeos, ve a la pestaña
 
 > Nota: Esta guía utiliza los ajustes básicos. Si tienes conocimientos técnicos sobre formatos y códecs, siempre puedes explorar la pestaña de opciones Avanzadas para tener un control total.
 
-![obs](../assets/img/ate/obs-03.png){ width="700" }
+![obs](../assets/img/vid/obs-03.png){ width="700" }
 
 ### Configurar Audio
 A continuación, dirígete a la pestaña Audio para establecer cómo se escuchará tu transmisión o grabación:
@@ -40,7 +40,7 @@ A continuación, dirígete a la pestaña Audio para establecer cómo se escuchar
 
 > ¡Importante! Si prefieres tener un control más detallado y añadir el audio manualmente solo en escenas específicas, debes dejar todos estos dispositivos globales en Deshabilitado.
 
-![obs](../assets/img/ate/obs-04.png){ width="700" }
+![obs](../assets/img/vid/obs-04.png){ width="700" }
 
 ### Configurar Vídeo 
 Para terminar la configuración básica, entra en la pestaña Vídeo, que es donde ajustarás el tamaño visual de tu transmisión o grabación:
@@ -49,7 +49,7 @@ Para terminar la configuración básica, entra en la pestaña Vídeo, que es don
 - **Filtro de Escala**: Al poner ambas resoluciones con los mismos valores, este ajuste se ocultará automáticamente. Si por algún motivo necesitas usar resoluciones distintas, la opción más recomendable para mantener una buena nitidez es Lanczos.
 - **Fotogramas por Segundo (FPS)**: Ajusta este valor según tus necesidades. Ten en cuenta que 30 FPS es el estándar más seguro y compatible para el rendimiento general de las redes y las cámaras web.
 
-![obs](../assets/img/ate/obs-05.png){ width="700" }
+![obs](../assets/img/vid/obs-05.png){ width="700" }
 
 ## 3. Escenas { .seccion }
 La estructura de OBS se basa en **Escenas**, las cuales funcionan como carpetas o contenedores que agrupan diferentes **Fuentes** (como cámaras, capturas de pantalla, audios o textos). Al activar una escena, se mostrarán todos los elementos que hayas metido en ella, respetando la ``posición y el orden de capas`` que hayas configurado. Al iniciar el programa, encontrarás una escena en blanco de forma predeterminada. Puedes administrar tu lista de escenas desde su panel inferior con los siguientes controles:
@@ -58,7 +58,7 @@ La estructura de OBS se basa en **Escenas**, las cuales funcionan como carpetas 
 - **Organizar**: Utiliza las flechas para ordenar la lista a tu gusto.
 - **Modificar**: Si haces clic derecho sobre cualquier escena, se abrirá un menú para cambiarle el nombre o duplicarla.
 
-![obs](../assets/img/ate/obs-06.png){ width="700" }
+![obs](../assets/img/vid/obs-06.png){ width="700" }
 
 ## 4. Fuentes { .seccion }
 Para meter contenido visual o interno dentro de la escena seleccionada, haz clic en el botón + del panel de Fuentes. El sistema te permite integrar una gran variedad de recursos:
@@ -76,7 +76,7 @@ Para meter contenido visual o interno dentro de la escena seleccionada, haz clic
     - **Ojo y Candado**: El icono del ojo te permite ocultar o mostrar una fuente rápidamente, mientras que el candado la bloquea para evitar que la muevas o modifiques por error.
     - **Agrupación y anidación**: Puedes juntar varias fuentes en "Grupos" para gestionarlas como si fueran un solo elemento, o incluso importar una escena completa dentro de otra para crear composiciones avanzadas.
 
-![obs](../assets/img/ate/obs-07.png){width="500"}
+![obs](../assets/img/vid/obs-07.png){width="500"}
 
 ## 5. Lienzo y Efectos { .seccion }
 La pantalla principal o Lienzo es tu espacio de trabajo para transformar las fuentes de manera visual:
@@ -85,7 +85,7 @@ La pantalla principal o Lienzo es tu espacio de trabajo para transformar las fue
 - **Duplicar con cuidado**: Puedes copiar y pegar elementos con Ctrl + C y Ctrl + V, pero evita hacerlo entre escenas distintas. Si lo haces de forma clásica, se pegará como una referencia vinculada (lo que alteres en una escena cambiará automáticamente en la otra). Es mejor añadir la fuente desde cero o usar la opción Pegar como duplicado con el clic derecho.
 - **Filtros visuales**: Al hacer clic derecho sobre una fuente, grupo o escena y seleccionar Filtros, puedes añadir efectos cromáticos o de vídeo mediante el botón +.
 
-![obs](../assets/img/ate/obs-08.png){width="500"}
+![obs](../assets/img/vid/obs-08.png){width="500"}
 
 ## 6. Audio { .seccion }
 El Mezclador de audio reúne todas las señales sonoras de tu transmisión, agrupando los sonidos globales del sistema y micrófonos junto a los elementos multimedia independientes.
@@ -94,7 +94,7 @@ El Mezclador de audio reúne todas las señales sonoras de tu transmisión, agru
 - **Sincronización de desfases**: Si notas que tu voz no va a la par con tu cámara, haz una prueba dando un par de palmadas. Después, ve al engranaje del panel, entra en Propiedades de audio avanzadas y ajusta el Intervalo de sincronización sumando milisegundos (un retraso habitual suele estar entre los 200 y 300 ms). Este ajuste se debe hacer por separado para cada dispositivo desalineado.
 - **Escucharse a uno mismo (Monitorización)**: Para evitar bucles de eco molestos, OBS no reproduce el sonido capturado en tus propios auriculares de forma nativa. Si necesitas escuchar una fuente en tiempo real, entra a las Propiedades de audio avanzadas y cambia su estado a Monitorización y salida.
 
-![obs](../assets/img/ate/obs-09.png){width="300"}
+![obs](../assets/img/vid/obs-09.png){width="300"}
 
 ## 7. Transiciones { .seccion }
 Al cambiar entre tus escenas se ejecutará el efecto visual que hayas puesto por defecto (como cortes o desvanecimientos) junto con el tiempo de duración que le asignes.

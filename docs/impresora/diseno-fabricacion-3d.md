@@ -4,7 +4,7 @@
 
 ## Flujo de trabajo general { .seccion }
 
-![Flujo de trabajo de diseño y fabricación 3D](../assets/img/ate/impresion3d-flujo.svg){ width="800" }
+![Flujo de trabajo de diseño y fabricación 3D](../assets/img/imp/impresion3d-flujo.svg){ width="800" }
 
 Antes de entrar en cada máquina, conviene tener claro el recorrido completo: **diseñar o descargar → (opcional) escanear → reparar la malla → laminar → imprimir → postprocesar**. Saltarse el paso de reparar la malla es la causa más habitual de que una impresión falle a mitad de proceso.
 

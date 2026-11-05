@@ -4,7 +4,7 @@
 
 ## Topología de red del sistema Sonos { .seccion }
 
-![Red multihabitación de altavoces Sonos](../assets/img/ate/sonos-red.svg){ width="800" }
+![Red multihabitación de altavoces Sonos](../assets/img/dom/sonos-red.svg){ width="800" }
 
 Todos los altavoces se conectan a la misma red Wi-Fi del centro y se agrupan entre sí; el control se hace desde la app Sonos o por voz mediante Alexa/Google Assistant.
 

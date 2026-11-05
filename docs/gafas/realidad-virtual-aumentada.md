@@ -8,7 +8,7 @@ Gafas de realidad virtual **autónomas** (no requieren PC ni cables). Resolució
 
 ### 1.1 Primer encendido y configuración
 
-![Flujo de puesta en marcha de las Meta Quest 2](../assets/img/ate/vr-flujo.svg){ width="700" }
+![Flujo de puesta en marcha de las Meta Quest 2](../assets/img/gaf/vr-flujo.svg){ width="700" }
 
 1. Mantén pulsado el botón lateral hasta que se encienda. Sigue el asistente inicial: red Wi-Fi, cuenta Meta y **calibración de altura del suelo**.
 2. Delimita el área de juego (**Guardian**): con las gafas puestas, traza el perímetro libre de obstáculos alrededor del alumnado. Repite este paso **cada vez que cambies de aula o de disposición del mobiliario**.

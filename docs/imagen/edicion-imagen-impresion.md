@@ -4,7 +4,7 @@
 
 ## ¿Qué herramienta uso? (guía rápida) { .seccion }
 
-![Árbol de decisión de software de edición de imagen](../assets/img/ate/imagen-arbol-decision.svg){ width="800" }
+![Árbol de decisión de software de edición de imagen](../assets/img/ima/imagen-arbol-decision.svg){ width="800" }
 
 ## 1. Software online (sin instalación) { .seccion }
 

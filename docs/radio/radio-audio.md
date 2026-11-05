@@ -8,7 +8,7 @@ Proyecto de radio educativa gestionado por alumnado y profesorado del centro, or
 
 ### 1.1 Flujo de trabajo de un programa
 
-![Flujo de producción de un programa de Radio Entérate](../assets/img/ate/radio-flujo.svg){ width="800" }
+![Flujo de producción de un programa de Radio Entérate](../assets/img/rad/radio-flujo.svg){ width="800" }
 
 1. **Guion**: se prepara escaleta con bloques, tiempos y locutores. Reparte turnos de palabra por escrito para evitar solapamientos en la grabación.
 2. **Grabación**: en el aula, con micrófono conectado al PC y **Audacity** abierto en una pista estéreo a 44.1 kHz. Haz una prueba de 10 segundos antes de grabar el programa completo para comprobar niveles.

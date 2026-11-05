@@ -4,7 +4,7 @@
 
 ## Esquema de conexiones (producción multicámara) { .seccion }
 
-![Esquema de conexiones del ATEM Mini Pro](../assets/img/ate/atem-conexiones.svg){ width="800" }
+![Esquema de conexiones del ATEM Mini Pro](../assets/img/vid/atem-conexiones.svg){ width="800" }
 
 El ATEM Mini Pro es el centro de la producción: recibe hasta 4 fuentes HDMI y reparte la salida a grabación, streaming y monitor, sin necesidad de un PC intermedio.
 
@@ -59,9 +59,12 @@ Mezclador compacto para producciones multicámara en directo: permite conmutar e
 | El USB no graba | Disco formateado en NTFS/FAT32 | Reformatear el disco en exFAT desde el propio ATEM |
 | Streaming se corta | Red Wi-Fi inestable | Conectar el ATEM por cable Ethernet, no por Wi-Fi |
 
+!!! tip "Plató de croma"
+    Para poner en marcha el croma del centro con el ATEM Mini Pro, consulta la guía paso a paso [ATEM Mini Pro (croma)](atem-mini-pro-croma.md).
+
 ## 📚 Software de edición y streaming { .seccion }
 
-- [OBS Studio](https://obsproject.com/es){target="_blank"} — Streaming y grabación en PC. **Manual completo disponible** en la sección Ateca de esta misma web: [OBS Studio](obs.md) (instalación, escenas, fuentes, audio, atajos y plugins).
+- [OBS Studio](https://obsproject.com/es){target="_blank"} — Streaming y grabación en PC. **Manual completo** en esta misma web: [OBS Studio](obs.md) (instalación, escenas, fuentes, audio, atajos y plugins).
 - [OpenShot](https://www.openshot.org/es){target="_blank"} — Edición de vídeo libre y sencilla, ideal para montajes rápidos del alumnado.
 - [GoLightStream](https://golightstream.com){target="_blank"} — Streaming online multiplataforma.
 - [Touch Portal](https://www.touch-portal.com){target="_blank"} — Convierte una tablet en Stream Deck (control remoto de escenas/atajos).
@@ -72,4 +75,3 @@ Mezclador compacto para producciones multicámara en directo: permite conmutar e
 - 🌐 Web del Aula ATECA (fuente de este manual): [Tecnologías | Aula AtecA](https://www3.gobiernodecanarias.org/medusa/proyecto/35014664-0006/aplicaciones/){target="_blank"}
 - 📖 [Manual de ATEM Software Control (Blackmagic)](https://www.blackmagicdesign.com/es/support/){target="_blank"}
 
-> 📷 **Pendiente:** añadir fotos reales del set de vídeo del aula (chroma, cámaras montadas, mesa del ATEM) y una captura del software ATEM Software Control en uso.

@@ -30,13 +30,11 @@ Más información en la web de la [Consejería de Educación del Gobierno de Can
 | Sección | Contenido |
 |---|---|
 | 🕶️ [Gafas VR / AR](gafas/realidad-virtual-aumentada.md) | Meta Quest 2, tablets de realidad aumentada y [apps VR gratuitas por familia profesional](gafas/apps-vr-gratuitas.md) |
-| 🛠️ [Impresora 3D](impresora/diseno-fabricacion-3d.md) | Artillery Genius Pro, Ultimaker, escáner IT3D Scan y [repositorios de diseños gratuitos](impresora/repositorios-disenos-3d.md) |
-| 📻 [Radio y Audio](radio/radio-audio.md) | Radio Entérate, grabación y edición de audio |
-| 🎥 [Vídeo y Streaming](video/video-streaming.md) | Producción multicámara, ATEM Mini Pro y [OBS Studio](video/obs.md) |
+| 🖨️ [Impresora 3D](impresora/diseno-fabricacion-3d.md) | Artillery Genius Pro, Ultimaker, escáner IT3D Scan y [repositorios de diseños gratuitos](impresora/repositorios-disenos-3d.md) |
+| 🎙️ [Radio y Audio](radio/radio-audio.md) | Radio Entérate, grabación y edición de audio |
+| 🎥 [Vídeo y Streaming](video/video-streaming.md) | Producción multicámara, [plató de croma con ATEM Mini Pro](video/atem-mini-pro-croma.md) y [OBS Studio](video/obs.md) |
 | 🖼️ [Imagen](imagen/edicion-imagen-impresion.md) | Software de retoque, diseño vectorial y preparación para impresión |
 | 🏠 [Domótica](domotica/domotica-automatizacion.md) | Altavoces Sonos, audio en red y automatización |
-| 🤖 [Robótica y dron](robotica/comparativa-robotica-dron.md) | Comparativa con otras aulas y [propuesta de compra](robotica/propuesta-compra-robotica-dron.md) |
-| 📈 [Proyecto ATECA](proyecto/comparativa-webs-ateca.md) | Comparativa de webs y [plan de mejora](proyecto/plan-mejora-web-ateca.md) |
 
 ## 🔗 Enlaces { .seccion }
 
