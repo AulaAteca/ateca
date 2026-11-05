@@ -1,0 +1,40 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowI" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    .box { stroke-width:2; rx:10; }
+    .label { fill:#ffffff; font-size:13px; font-weight:600; text-anchor:middle; }
+    .sub { fill:#ffffff; font-size:11px; text-anchor:middle; font-weight:400; }
+    .arrow { stroke:#546E7A; stroke-width:2.5; marker-end:url(#arrowI); fill:none; }
+    .q { fill:#212121; font-size:14px; font-weight:700; text-anchor:middle; }
+  </style>
+
+  <rect x="360" y="10" width="180" height="55" rx="10" fill="#455A64" stroke="#263238"/>
+  <text class="label" x="450" y="33">¿Qué necesitas</text>
+  <text class="label" x="450" y="50">editar?</text>
+
+  <line class="arrow" x1="400" y1="65" x2="200" y2="105"/>
+  <line class="arrow" x1="500" y1="65" x2="700" y2="105"/>
+
+  <text class="q" x="230" y="98">Fotos / imágenes</text>
+  <text class="q" x="670" y="98">Logos / iconos / vectores</text>
+
+  <rect class="box" x="60" y="110" width="170" height="60" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="145" y="135">Photopea / Pixlr</text>
+  <text class="sub" x="145" y="152">online, sin instalación</text>
+
+  <rect class="box" x="60" y="185" width="170" height="60" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="145" y="210">GIMP</text>
+  <text class="sub" x="145" y="227">escritorio, retoque avanzado</text>
+
+  <rect class="box" x="670" y="110" width="170" height="60" fill="#2E7D32" stroke="#1B5E20"/>
+  <text class="label" x="755" y="135">Boxy SVG</text>
+  <text class="sub" x="755" y="152">online, SVG rápido</text>
+
+  <rect class="box" x="670" y="185" width="170" height="60" fill="#2E7D32" stroke="#1B5E20"/>
+  <text class="label" x="755" y="210">Inkscape</text>
+  <text class="sub" x="755" y="227">escritorio, vectorial avanzado</text>
+</svg>

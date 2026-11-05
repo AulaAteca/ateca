@@ -1,0 +1,41 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowS" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    .box { stroke-width:2; rx:10; }
+    .label { fill:#ffffff; font-size:13px; font-weight:600; text-anchor:middle; }
+    .sub { fill:#ffffff; font-size:10.5px; text-anchor:middle; font-weight:400; }
+    .line { stroke:#546E7A; stroke-width:2; fill:none; }
+  </style>
+
+  <rect x="370" y="10" width="160" height="60" rx="10" fill="#37474F" stroke="#102027"/>
+  <text class="label" x="450" y="35">Router Wi-Fi</text>
+  <text class="sub" x="450" y="52">red del centro</text>
+
+  <line class="line" x1="450" y1="70" x2="450" y2="105"/>
+  <line class="line" x1="450" y1="105" x2="150" y2="105"/>
+  <line class="line" x1="450" y1="105" x2="450" y2="105"/>
+  <line class="line" x1="450" y1="105" x2="750" y2="105"/>
+  <line class="line" x1="150" y1="105" x2="150" y2="130"/>
+  <line class="line" x1="450" y1="105" x2="450" y2="130"/>
+  <line class="line" x1="750" y1="105" x2="750" y2="130"/>
+
+  <rect class="box" x="70" y="130" width="160" height="60" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="150" y="155">Sonos — Aula 1</text>
+  <text class="sub" x="150" y="172">altavoz inteligente</text>
+
+  <rect class="box" x="370" y="130" width="160" height="60" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="450" y="155">Sonos — Aula 2</text>
+  <text class="sub" x="450" y="172">agrupado (multihabitación)</text>
+
+  <rect class="box" x="670" y="130" width="160" height="60" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="750" y="155">Sonos — Aula 3</text>
+  <text class="sub" x="750" y="172">agrupado (multihabitación)</text>
+
+  <line class="line" x1="450" y1="190" x2="450" y2="215"/>
+  <rect class="box" x="330" y="215" width="240" height="40" fill="#2E7D32" stroke="#1B5E20"/>
+  <text class="label" x="450" y="240">App Sonos + Alexa / Google Assistant</text>
+</svg>

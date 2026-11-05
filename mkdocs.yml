@@ -1,0 +1,75 @@
+site_name: AULA ATECA
+site_description: Documentación del Aula de Tecnología Aplicada (ATECA) del CIFP Villa de Agüimes
+site_url: https://aulateca.github.io/ateca/
+repo_url: https://github.com/AulaAteca/ateca
+
+theme:
+   name: material
+   language: es
+   # logo: assets/favicon.svg
+   palette:
+      - scheme: default
+        primary: green
+        accent: indigo
+        toggle:
+           icon: material/toggle-switch-off-outline
+           name: Modo oscuro
+      - scheme: slate
+        primary: pink
+        accent: green
+        toggle:
+           icon: material/toggle-switch
+           name: Modo claro
+nav:
+   - Inicio: index.md
+   - Gafas VR / AR:
+        - Realidad Virtual y Aumentada: gafas/realidad-virtual-aumentada.md
+        - Manual Meta Quest 2 y SimulWind: gafas/meta-quest-2.md
+        - Apps VR gratuitas por familia profesional: gafas/apps-vr-gratuitas.md
+   - Impresora 3D:
+        - Diseño y Fabricación 3D: impresora/diseno-fabricacion-3d.md
+        - Repositorios de diseños 3D gratuitos: impresora/repositorios-disenos-3d.md
+   - Radio y Audio:
+        - Radio y Audio: radio/radio-audio.md
+   - Vídeo y Streaming:
+        - Vídeo y Streaming: video/video-streaming.md
+        - OBS Studio: video/obs.md
+   - Imagen:
+        - Edición de Imagen e Impresión: imagen/edicion-imagen-impresion.md
+   - Domótica:
+        - Domótica y Automatización: domotica/domotica-automatizacion.md
+   - Robótica y dron:
+        - Comparativa y presupuesto: robotica/comparativa-robotica-dron.md
+        - Propuesta de compra: robotica/propuesta-compra-robotica-dron.md
+   - Proyecto ATECA:
+        - Comparativa de webs de Aulas ATECA: proyecto/comparativa-webs-ateca.md
+        - Plan de mejora de la web ATECA: proyecto/plan-mejora-web-ateca.md
+
+plugins:
+   - search
+   - glightbox
+
+extra_css:
+   - assets/css/extra.css
+   - assets/css/cards.css
+   - assets/css/seccion.css
+   - assets/css/practica.css
+
+extra_javascript:
+   - assets/javascripts/nav-toggle.js
+
+markdown_extensions:
+   - admonition
+   - attr_list
+   - tables
+   - pymdownx.details
+   - pymdownx.highlight:
+        anchor_linenums: false
+        use_pygments: true
+   - pymdownx.superfences
+   - pymdownx.inlinehilite
+   - md_in_html
+   - pymdownx.tabbed:
+        alternate_style: true
+   - pymdownx.tasklist:
+        custom_checkbox: true

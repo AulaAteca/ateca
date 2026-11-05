@@ -1,0 +1,50 @@
+<svg viewBox="0 0 950 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow3d" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    .box { stroke-width:2; rx:10; }
+    .label { fill:#ffffff; font-size:14px; font-weight:600; text-anchor:middle; }
+    .sub { fill:#ffffff; font-size:11px; text-anchor:middle; font-weight:400; }
+    .arrow { stroke:#546E7A; stroke-width:2.5; marker-end:url(#arrow3d); fill:none; }
+  </style>
+
+  <rect class="box" x="10" y="30" width="150" height="70" fill="#8E24AA" stroke="#4A148C"/>
+  <text class="label" x="85" y="60">Diseñar / descargar</text>
+  <text class="sub" x="85" y="78">TinkerCAD, Fusion 360...</text>
+
+  <line class="arrow" x1="165" y1="65" x2="200" y2="65"/>
+
+  <rect class="box" x="205" y="30" width="150" height="70" fill="#8E24AA" stroke="#4A148C"/>
+  <text class="label" x="280" y="60">Escanear objeto</text>
+  <text class="sub" x="280" y="78">(opcional) IT3D Scan</text>
+
+  <line class="arrow" x1="360" y1="65" x2="395" y2="65"/>
+
+  <rect class="box" x="400" y="30" width="150" height="70" fill="#6D4C41" stroke="#3E2723"/>
+  <text class="label" x="475" y="60">Reparar malla</text>
+  <text class="sub" x="475" y="78">rellenar huecos</text>
+
+  <line class="arrow" x1="555" y1="65" x2="590" y2="65"/>
+
+  <rect class="box" x="595" y="30" width="150" height="70" fill="#1565C0" stroke="#0D47A1"/>
+  <text class="label" x="670" y="60">Laminar</text>
+  <text class="sub" x="670" y="78">Ultimaker Cura</text>
+
+  <line class="arrow" x1="750" y1="65" x2="785" y2="65"/>
+
+  <rect class="box" x="790" y="30" width="150" height="70" fill="#2E7D32" stroke="#1B5E20"/>
+  <text class="label" x="865" y="60">Imprimir</text>
+  <text class="sub" x="865" y="78">Artillery / Ultimaker</text>
+
+  <line class="arrow" x1="865" y1="100" x2="865" y2="130"/>
+  <line class="arrow" x1="790" y1="165" x2="480" y2="165"/>
+
+  <rect class="box" x="325" y="130" width="150" height="70" fill="#EF6C00" stroke="#E65100"/>
+  <text class="label" x="400" y="160">Postprocesado</text>
+  <text class="sub" x="400" y="178">retirar soportes, lijar</text>
+
+  <text x="475" y="235" text-anchor="middle" font-size="12" fill="#607D8B">Flujo de trabajo — Diseño y Fabricación 3D (Aula ATECA)</text>
+</svg>

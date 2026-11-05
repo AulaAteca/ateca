@@ -1,0 +1,43 @@
+<svg viewBox="0 0 950 220" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#546E7A"/>
+    </marker>
+  </defs>
+  <style>
+    .box { stroke-width:2; rx:10; }
+    .label { fill:#ffffff; font-size:14px; font-weight:600; text-anchor:middle; }
+    .sub { fill:#ffffff; font-size:11px; text-anchor:middle; font-weight:400; }
+    .arrow { stroke:#546E7A; stroke-width:2.5; marker-end:url(#arrowR); fill:none; }
+  </style>
+
+  <rect class="box" x="10" y="60" width="160" height="70" fill="#455A64" stroke="#263238"/>
+  <text class="label" x="90" y="90">1. Guion</text>
+  <text class="sub" x="90" y="108">escaleta y tiempos</text>
+
+  <line class="arrow" x1="175" y1="95" x2="210" y2="95"/>
+
+  <rect class="box" x="215" y="60" width="160" height="70" fill="#C62828" stroke="#8E0000"/>
+  <text class="label" x="295" y="90">2. Grabación</text>
+  <text class="sub" x="295" y="108">Audacity, 44.1 kHz</text>
+
+  <line class="arrow" x1="380" y1="95" x2="415" y2="95"/>
+
+  <rect class="box" x="420" y="60" width="160" height="70" fill="#C62828" stroke="#8E0000"/>
+  <text class="label" x="500" y="90">3. Edición</text>
+  <text class="sub" x="500" y="108">cortes, ruido, normalizar</text>
+
+  <line class="arrow" x1="585" y1="95" x2="620" y2="95"/>
+
+  <rect class="box" x="625" y="60" width="160" height="70" fill="#F9A825" stroke="#B26A00"/>
+  <text class="label" x="705" y="90">4. Mezcla</text>
+  <text class="sub" x="705" y="108">MIXXX (música/efectos)</text>
+
+  <line class="arrow" x1="790" y1="95" x2="820" y2="95"/>
+
+  <rect class="box" x="825" y="60" width="115" height="70" fill="#2E7D32" stroke="#1B5E20"/>
+  <text class="label" x="882" y="90">5. Exportar</text>
+  <text class="sub" x="882" y="108">MP3 192 kbps</text>
+
+  <text x="475" y="195" text-anchor="middle" font-size="12" fill="#607D8B">Flujo de producción de un programa — Radio Entérate (Aula ATECA)</text>
+</svg>
