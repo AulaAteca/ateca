@@ -1,0 +1,1629 @@
+<!DOCTYPE html><html lang="es" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación del Aula de Tecnología Aplicada (ATECA) del CIFP Villa de Agüimes">
+      
+      
+      
+        <link rel="canonical" href="https://aulaateca.github.io/ateca/video/obs/">
+      
+      
+        <link rel="prev" href="../atem-mini-pro-croma/">
+      
+      
+        <link rel="next" href="../../imagen/edicion-imagen-impresion/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>OBS Studio - AULA ATECA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/css/cards.css">
+    
+      <link rel="stylesheet" href="../../assets/css/seccion.css">
+    
+      <link rel="stylesheet" href="../../assets/css/practica.css">
+    
+      <link rel="stylesheet" href="../../assets/css/videos.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#obs-studio" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="AULA ATECA" class="md-header__button md-logo" aria-label="AULA ATECA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AULA ATECA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OBS Studio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo" aria-label="Modo oscuro" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="green" aria-label="Modo claro" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AulaAteca/ateca" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AULA ATECA" class="md-nav__button md-logo" aria-label="AULA ATECA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    AULA ATECA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AulaAteca/ateca" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏫 Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🕶️ Gafas VR / AR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🕶️ Gafas VR / AR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gafas/realidad-virtual-aumentada/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VR y AR en el aula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gafas/meta-quest-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manual Quest 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gafas/simulwind/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SimulWind en Quest 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gafas/apps-vr-gratuitas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps VR gratuitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖨️ Impresora 3D
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖨️ Impresora 3D
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/diseno-fabricacion-3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diseño e impresión 3D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/repositorios-disenos-3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diseños 3D gratuitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎙️ Radio y Audio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🎙️ Radio y Audio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../radio/radio-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Radio y audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎥 Vídeo y Streaming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🎥 Vídeo y Streaming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video-streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vídeo y streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atem-mini-pro-croma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ATEM Mini Pro (croma)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBS Studio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBS Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-instalar-obs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Instalar OBS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configuración básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Configuración básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-emision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar emisión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar Vídeo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-escenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Escenas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lienzo-y-efectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lienzo y Efectos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Audio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Transiciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-atajos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Atajos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-grabar-y-emitir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Grabar y emitir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Perfil
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Plugins
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖼️ Imagen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖼️ Imagen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../imagen/edicion-imagen-impresion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edición e impresión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 Domótica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏠 Domótica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domotica/domotica-automatizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sonos y domótica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#1-instalar-obs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Instalar OBS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-configuracion-basica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Configuración básica
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Configuración básica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configurar-emision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar emisión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar salida
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar Audio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar Vídeo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-escenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Escenas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-fuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Fuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-lienzo-y-efectos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Lienzo y Efectos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Audio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-transiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Transiciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-atajos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Atajos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-grabar-y-emitir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Grabar y emitir
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-perfil" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Perfil
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-plugins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Plugins
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Recursos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 class="card" id="obs-studio">🎬 OBS Studio</h1>
+<blockquote>
+<p><strong>OBS Studio</strong> (Open Broadcaster Software) es software libre, gratuito y de código abierto para grabación de vídeo y retransmisión en directo, considerado el estándar de la industria entre creadores de contenido y streamers.</p>
+</blockquote>
+<h2 class="seccion" id="1-instalar-obs">1. Instalar OBS</h2>
+<p>Descarga desde <a href="https://obsproject.com" target="_blank">obsproject.com</a> → instala → al abrirlo por primera vez el <strong>Asistente de configuración automática</strong> te preguntará si quieres optimizar para <em>streaming</em> o <em>grabación</em>. <strong>Déjalo hacer su trabajo.</strong></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-01.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-01.png" width="700"></a></p>
+<ol>
+<li><strong>Barra de Menús</strong> para configurar distintos aspectos del programa.</li>
+<li><strong>Lienzo</strong> La pantalla grande de previsualización en tiempo real. Lo que aparece ahí es exactamente lo que saldrá en tu vídeo. Puedes arrastrar y redimensionar las fuentes directamente sobre él.</li>
+<li><strong>Escenas</strong> Una "pantalla" completa con su propio conjunto de fuentes. Puedes tener varias y cambiar entre ellas.</li>
+<li><strong>Fuentes</strong> Cada elemento dentro de una escena: pantalla, webcam, imagen, texto, audio...</li>
+<li><strong>Mezclador de Audio</strong> Panel donde controlas los niveles de cada fuente de sonido.</li>
+<li><strong>Transiciones</strong>  Efecto visual al cambiar de una escena a otra (corte, fundido, etc.).</li>
+<li><strong>Controles</strong> Panel con los botones principales: iniciar/parar streaming y grabación, modo estudio, y acceso a configuración.</li>
+</ol>
+<h2 class="seccion" id="2-configuracion-basica">2. Configuración básica</h2>
+<p>Una vez instalado, debemos comenzar con la configuración, para ello, iremos a <strong>Menú &gt; Archivo &gt; Ajustes</strong> e iremos configurando los diferentes apartados.</p>
+<h3 id="configurar-emision">Configurar emisión</h3>
+<p>En el apartado <strong>Emisión</strong> dentro de los Ajustes, puedes seleccionar tu plataforma de streaming desde el menú desplegable Servicio para vincularla automáticamente (mediante Conectar Cuenta) o configurarla de forma manual (usando la Clave de Emisión). Al elegir una plataforma, se habilitarán opciones adicionales, siendo fundamental marcar la casilla para ignorar las recomendaciones del servicio si tu intención es aplicar tus propios parámetros de transmisión personalizados más adelante.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-02.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-02.png" width="700"></a></p>
+<h3 id="configurar-salida">Configurar salida</h3>
+<p>Para ajustar rápidamente la calidad de tus directos y vídeos, ve a la pestaña Salida y selecciona el modo Sencillo. Desde ahí, puedes configurar dos bloques principales:</p>
+<ul>
+<li><strong>Transmisión (Streaming)</strong>: Aquí limitas el uso de tu red ajustando el Bitrate de Vídeo (para emitir a 1080p se sugiere entre 2500 y 5000 Kbps, aunque es ideal consultar las recomendaciones exactas de la plataforma que vayas a usar). Asegúrate de que el Bitrate de Audio esté al menos a 128 Kbps y, por lo general, es mejor dejar los codificadores en sus valores predeterminados.</li>
+<li><strong>Grabación Local</strong>: Primero, elige la carpeta de tu PC donde se guardarán los vídeos. Luego, configura la calidad en "Alta" (que genera un tamaño de archivo medio) y selecciona el formato MP4 fragmentado. Para el vídeo, si tienes una tarjeta gráfica dedicada, elige la codificación por Hardware; para el audio, puedes dejar la opción AAC por defecto.</li>
+</ul>
+<blockquote>
+<p>Nota: Esta guía utiliza los ajustes básicos. Si tienes conocimientos técnicos sobre formatos y códecs, siempre puedes explorar la pestaña de opciones Avanzadas para tener un control total.</p>
+</blockquote>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-03.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-03.png" width="700"></a></p>
+<h3 id="configurar-audio">Configurar Audio</h3>
+<p>A continuación, dirígete a la pestaña Audio para establecer cómo se escuchará tu transmisión o grabación:</p>
+<ul>
+<li><strong>Configuración General</strong>: Define la frecuencia de muestreo (puedes elegir entre 44.1 kHz o 48 kHz) y asegúrate de que la opción de canales esté marcada como Estéreo.</li>
+<li><strong>Dispositivos de Audio Globales</strong>: Este apartado controla los sonidos que se escucharán en todas tus escenas de forma general. Configura el Audio del Escritorio con su valor por defecto para capturar el sonido de tu ordenador, y en Mic/Auxiliar selecciona el micrófono que vayas a utilizar (interno, USB, etc.).</li>
+</ul>
+<blockquote>
+<p>¡Importante! Si prefieres tener un control más detallado y añadir el audio manualmente solo en escenas específicas, debes dejar todos estos dispositivos globales en Deshabilitado.</p>
+</blockquote>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-04.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-04.png" width="700"></a></p>
+<h3 id="configurar-video">Configurar Vídeo</h3>
+<p>Para terminar la configuración básica, entra en la pestaña Vídeo, que es donde ajustarás el tamaño visual de tu transmisión o grabación:</p>
+<ul>
+<li><strong>Resoluciones</strong>: Te sugerimos establecer tanto la Resolución de base (el lienzo donde organizas tus elementos) como la Resolución de salida (la imagen final que se emite o graba) en 1920x1080 (Full HD).</li>
+<li><strong>Filtro de Escala</strong>: Al poner ambas resoluciones con los mismos valores, este ajuste se ocultará automáticamente. Si por algún motivo necesitas usar resoluciones distintas, la opción más recomendable para mantener una buena nitidez es Lanczos.</li>
+<li><strong>Fotogramas por Segundo (FPS)</strong>: Ajusta este valor según tus necesidades. Ten en cuenta que 30 FPS es el estándar más seguro y compatible para el rendimiento general de las redes y las cámaras web.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-05.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-05.png" width="700"></a></p>
+<h2 class="seccion" id="3-escenas">3. Escenas</h2>
+<p>La estructura de OBS se basa en <strong>Escenas</strong>, las cuales funcionan como carpetas o contenedores que agrupan diferentes <strong>Fuentes</strong> (como cámaras, capturas de pantalla, audios o textos). Al activar una escena, se mostrarán todos los elementos que hayas metido en ella, respetando la <code>posición y el orden de capas</code> que hayas configurado. Al iniciar el programa, encontrarás una escena en blanco de forma predeterminada. Puedes administrar tu lista de escenas desde su panel inferior con los siguientes controles:</p>
+<ul>
+<li><strong>Añadir y eliminar</strong>: Usa el botón + para crear una nueva escena o el icono de la papelera para borrarla.</li>
+<li><strong>Organizar</strong>: Utiliza las flechas para ordenar la lista a tu gusto.</li>
+<li><strong>Modificar</strong>: Si haces clic derecho sobre cualquier escena, se abrirá un menú para cambiarle el nombre o duplicarla.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-06.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-06.png" width="700"></a></p>
+<h2 class="seccion" id="4-fuentes">4. Fuentes</h2>
+<p>Para meter contenido visual o interno dentro de la escena seleccionada, haz clic en el botón + del panel de Fuentes. El sistema te permite integrar una gran variedad de recursos:</p>
+<ul>
+<li><strong>Elementos disponibles</strong>: <ul>
+<li><code>Captura de pantalla</code> | Captura todo el monitor</li>
+<li><code>Captura de ventana</code> | Solo una aplicación concreta </li>
+<li><code>Dispositivo de captura de vídeo</code> | Webcam </li>
+<li><code>Fuente multimedia</code> | Vídeo/audio de un archivo </li>
+<li><code>Texto (GDI+)</code> | Añadir texto sobre la escena </li>
+<li><code>Imagen</code> | Logos, overlays, marcos </li>
+<li><code>Captura del juego</code> | Modo optimizado para videojuegos </li>
+</ul>
+</li>
+<li><strong>Personalización</strong>: Al añadir cualquier fuente, se abrirá un menú específico para darle un nombre propio y ajustar sus parámetros iniciales.</li>
+<li>Herramientas de control en el lienzo:<ul>
+<li><strong>Ojo y Candado</strong>: El icono del ojo te permite ocultar o mostrar una fuente rápidamente, mientras que el candado la bloquea para evitar que la muevas o modifiques por error.</li>
+<li><strong>Agrupación y anidación</strong>: Puedes juntar varias fuentes en "Grupos" para gestionarlas como si fueran un solo elemento, o incluso importar una escena completa dentro de otra para crear composiciones avanzadas.</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-07.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-07.png" width="500"></a></p>
+<h2 class="seccion" id="5-lienzo-y-efectos">5. Lienzo y Efectos</h2>
+<p>La pantalla principal o Lienzo es tu espacio de trabajo para transformar las fuentes de manera visual:</p>
+<ul>
+<li><strong>Manipulación directa</strong>: Al hacer clic sobre cualquier elemento verás un borde rojo. Puedes arrastrarlo para moverlo o usar atajos rápidos: mantén presionado Mayús para deformar su tamaño libremente o Alt para recortar los bordes de la imagen.</li>
+<li><strong>Duplicar con cuidado</strong>: Puedes copiar y pegar elementos con Ctrl + C y Ctrl + V, pero evita hacerlo entre escenas distintas. Si lo haces de forma clásica, se pegará como una referencia vinculada (lo que alteres en una escena cambiará automáticamente en la otra). Es mejor añadir la fuente desde cero o usar la opción Pegar como duplicado con el clic derecho.</li>
+<li><strong>Filtros visuales</strong>: Al hacer clic derecho sobre una fuente, grupo o escena y seleccionar Filtros, puedes añadir efectos cromáticos o de vídeo mediante el botón +.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-08.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-08.png" width="500"></a></p>
+<h2 class="seccion" id="6-audio">6. Audio</h2>
+<p>El Mezclador de audio reúne todas las señales sonoras de tu transmisión, agrupando los sonidos globales del sistema y micrófonos junto a los elementos multimedia independientes.</p>
+<ul>
+<li><strong>Control básico</strong>: Modifica los volúmenes con las barras deslizantes azules y silencia canales usando el icono del altavoz. Ten en cuenta que, por defecto, todo se unificará en una sola pista estéreo en la salida final.</li>
+<li><strong>Sincronización de desfases</strong>: Si notas que tu voz no va a la par con tu cámara, haz una prueba dando un par de palmadas. Después, ve al engranaje del panel, entra en Propiedades de audio avanzadas y ajusta el Intervalo de sincronización sumando milisegundos (un retraso habitual suele estar entre los 200 y 300 ms). Este ajuste se debe hacer por separado para cada dispositivo desalineado.</li>
+<li><strong>Escucharse a uno mismo (Monitorización)</strong>: Para evitar bucles de eco molestos, OBS no reproduce el sonido capturado en tus propios auriculares de forma nativa. Si necesitas escuchar una fuente en tiempo real, entra a las Propiedades de audio avanzadas y cambia su estado a Monitorización y salida.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/img/vid/obs-09.png" data-desc-position="bottom"><img alt="obs" src="../../assets/img/vid/obs-09.png" width="300"></a></p>
+<h2 class="seccion" id="7-transiciones">7. Transiciones</h2>
+<p>Al cambiar entre tus escenas se ejecutará el efecto visual que hayas puesto por defecto (como cortes o desvanecimientos) junto con el tiempo de duración que le asignes.</p>
+<ul>
+<li><strong>Transiciones personalizadas</strong>: Si quieres que una escena específica tenga un efecto de entrada único, haz clic derecho sobre ella y selecciona Anulación de transición. También puedes añadir estos efectos a las fuentes individuales cuando las ocultas o muestras con el icono del ojo.</li>
+</ul>
+<h2 class="seccion" id="8-atajos">8. Atajos</h2>
+<p>Para que tu producción sea mucho más fluida e intuitiva, entra en Ajustes &gt; Atajos y asigna combinaciones de teclas para saltar de escena o apagar fuentes al instante.
+    - <strong>Bloquear fuentes</strong> — clic derecho sobre una fuente → <code>Bloquear</code> para que no la muevas sin querer.
+    - <strong>Orden de fuentes importa</strong> — las fuentes de arriba tapan a las de abajo (como capas en Photoshop).
+    - <strong>Previsualización</strong> — lo que ves en el canvas NO es lo que se graba hasta que das a grabar. Usa <code>Estudio</code> para ver ambas cosas a la vez.
+    - <strong>Modo Estudio</strong> — botón abajo a la derecha, permite preparar la siguiente escena antes de cambiar.
+    - <strong>Filtros de vídeo</strong> — clic derecho en una fuente → <code>Filtros</code> → puedes añadir corrección de color, máscara, recorte, etc.
+    - Ve a <code>Configuración → Atajos de teclado</code> y asigna teclas a las acciones que más uses. Por ejemplo: Iniciar/parar grabación, Iniciar/parar streaming, Silenciar micrófono, Cambiar de escena </p>
+<h2 class="seccion" id="9-grabar-y-emitir">9. Grabar y emitir</h2>
+<ul>
+<li>📁 <strong>Grabación en Local</strong>: Al pulsar Iniciar grabación en el panel de controles, todo lo que ocurra en el lienzo se guardará directamente en tu ordenador. Sé cuidadoso, ya que los fallos en vivo se registrarán en el vídeo final.</li>
+<li>🎥 <strong>Cámara Virtual</strong>: Puedes usar la composición de OBS como si fuera tu webcam en aplicaciones como Zoom o Teams pulsando Iniciar cámara virtual. Desde su engranaje puedes elegir si transmitir todo el proyecto o solo una escena en concreto. Importante: Esta función solo envía vídeo; el audio de OBS no se transfiere a la videollamada, por lo que deberás seleccionar tu micrófono directamente en los ajustes de Zoom/Teams.</li>
+<li>🌐 <strong>Emisión en Directo</strong> (Streaming): El botón Iniciar transmisión envía tu señal directamente a la plataforma configurada. Para hacer cambios sobre la marcha sin que tu audiencia lo note, activa el Modo estudio. Esto dividirá la interfaz en dos pantallas: Vista previa (donde editas y preparas cosas a ciegas) y Programa (lo que se está emitiendo en vivo). Cuando termines de ajustar, usas los controles centrales para aplicar el cambio.</li>
+</ul>
+<blockquote>
+<ul>
+<li>💡 Graba en <strong>MKV</strong> y convierte a MP4 después con <code>Archivo → Remuxear grabaciones</code>. Si OBS se cierra inesperadamente, el MKV se puede recuperar; el MP4 no.</li>
+</ul>
+</blockquote>
+<div class="highlight"><pre><span></span><code>Resolución base:      1920x1080
+Resolución de salida: 1920x1080
+FPS:                  30 (o 60 si tu PC lo soporta)
+Codificador:          x264 (o NVENC si tienes Nvidia)
+Tasa de bits:         6000-8000 kbps (para alta calidad)
+Formato archivo:   MKV (más seguro ante cortes de luz) → luego remuxear a MP4
+</code></pre></div>
+<h2 class="seccion" id="10-perfil">10. Perfil</h2>
+<blockquote>
+<ul>
+<li>Puedes crear un <strong>Perfil</strong>: Configuración de salida guardada (útil para tener uno para streaming y otro para grabación).</li>
+</ul>
+</blockquote>
+<h2 class="seccion" id="11-plugins">11. Plugins</h2>
+<p>Se presentan los <strong>plugins más útiles</strong> para potenciar OBS más allá de sus funciones nativas:</p>
+<ul>
+<li><strong>obs-move-transition:</strong> transiciones fluidas y animadas entre elementos de la escena.</li>
+<li><strong>StreamFX:</strong> efectos visuales avanzados como blur, sombras, shaders 3D.</li>
+<li><strong>Advanced Scene Switcher:</strong> automatización del cambio de escenas según condiciones (ventana activa, tiempo, etc.).</li>
+<li><strong>Source Clone:</strong> duplicar fuentes sin consumir recursos adicionales.</li>
+<li><strong>Virtualcam:</strong> usar OBS como cámara virtual en Zoom, Meet, Teams, etc.</li>
+<li><strong>obs-websocket:</strong> controlar OBS de forma remota desde aplicaciones externas o streamdecks.</li>
+<li><strong>Elgato Stream Deck integration:</strong> asignar acciones de OBS a botones físicos o de pantalla táctil.</li>
+</ul>
+<h2 class="seccion" id="recursos">📚 Recursos</h2>
+<ul>
+<li>📖 Documentación oficial: <a href="https://obsproject.com/wiki" target="_blank">obsproject.com/wiki</a></li>
+<li>💬 Foro oficial: <a href="https://obsproject.com/forum" target="_blank">obsproject.com/forum</a></li>
+<li>🎥 Canal YouTube recomendado: busca <strong>"OBS Studio tutorial español"</strong></li>
+<li>▶︎ <a href="https://youtu.be/LXlabyl7kS4" target="_blank">Curso de OBS Studio- Youtube</a></li>
+<li>00:01:11</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../assets/javascripts/nav-toggle.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
