@@ -29,7 +29,8 @@ Más información en la web de la [Consejería de Educación del Gobierno de Can
 
 | Sección | Contenido |
 |---|---|
-| 🕶️ [Gafas VR / AR](gafas/realidad-virtual-aumentada.md) | Meta Quest 2, tablets de realidad aumentada y [apps VR gratuitas por familia profesional](gafas/apps-vr-gratuitas.md) |
+| 🕶️ [Gafas VR / AR](gafas/realidad-virtual-aumentada.md) | Meta Quest 2, tablets de realidad aumentada, [apps VR gratuitas por familia profesional](gafas/apps-vr-gratuitas.md) y [manual de trabajo 2026](gafas/manual-trabajo-2026.md) |
+| 🖥️ [Pantalla interactiva](pantalla/newline-lyra.md) | Newline Lyra TT-8621Q: pizarra digital, anotación y proyección inalámbrica |
 | 🖨️ [Impresora 3D](impresora/diseno-fabricacion-3d.md) | Artillery Genius Pro, Ultimaker, escáner IT3D Scan y [repositorios de diseños gratuitos](impresora/repositorios-disenos-3d.md) |
 | 🎙️ [Radio y Audio](radio/radio-audio.md) | Radio Entérate, grabación y edición de audio |
 | 🎥 [Vídeo y Streaming](video/video-streaming.md) | Producción multicámara, [plató de croma con ATEM Mini Pro](video/atem-mini-pro-croma.md) y [OBS Studio](video/obs.md) |
