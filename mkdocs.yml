@@ -9,14 +9,14 @@ theme:
    # logo: assets/favicon.svg
    palette:
       - scheme: default
-        primary: green
-        accent: indigo
+        primary: custom
+        accent: custom
         toggle:
            icon: material/toggle-switch-off-outline
            name: Modo oscuro
       - scheme: slate
-        primary: pink
-        accent: green
+        primary: custom
+        accent: custom
         toggle:
            icon: material/toggle-switch
            name: Modo claro
@@ -32,6 +32,8 @@ nav:
         - Newline Lyra TT-8621Q: pantalla/newline-lyra.md
    - 🖨️ Impresora 3D:
         - Diseño e impresión 3D: impresora/diseno-fabricacion-3d.md
+        - Artillery Genius Pro: impresora/artillery-genius-pro.md
+        - Ultimaker S3: impresora/ultimaker-s3.md
         - Diseños 3D gratuitos: impresora/repositorios-disenos-3d.md
    - 🎙️ Radio y Audio:
         - Radio y audio: radio/radio-audio.md
@@ -49,6 +51,7 @@ plugins:
    - glightbox
 
 extra_css:
+   - assets/css/ateca.css
    - assets/css/extra.css
    - assets/css/cards.css
    - assets/css/seccion.css

@@ -1,0 +1,145 @@
+/* ============================================================
+   PALETA ATECA — azules y amarillo de la web oficial del aula
+   (https://www3.gobiernodecanarias.org/medusa/proyecto/35014664-0006/)
+   Requiere en mkdocs.yml: primary: custom · accent: custom
+   ============================================================ */
+:root {
+  --ateca-azul: #0c3d87;          /* cabecera de la web ATECA */
+  --ateca-azul-oscuro: #082c63;
+  --ateca-azul-medio: #1f5fb8;
+  --ateca-azul-claro: #7fa6dd;
+  --ateca-azul-fondo: #eaf1fb;
+  --ateca-amarillo: #ffc20e;      /* botón "Reservar ATECA" */
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--ateca-azul);
+  --md-primary-fg-color--light: var(--ateca-azul-medio);
+  --md-primary-fg-color--dark: var(--ateca-azul-oscuro);
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, .7);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--ateca-azul-medio);
+  --md-accent-fg-color--transparent: rgba(31, 95, 184, .1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, .7);
+}
+
+/* Modo oscuro: enlaces y acento más luminosos para que se lean */
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-typeset-a-color: #8ab4ff;
+}
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--ateca-amarillo);
+  --md-accent-fg-color--transparent: rgba(255, 194, 14, .12);
+}
+
+/* Fina línea amarilla bajo la cabecera, como acento de marca */
+.md-header {
+  box-shadow: inset 0 -3px 0 var(--ateca-amarillo), 0 0 .2rem rgba(0, 0, 0, .1), 0 .2rem .4rem rgba(0, 0, 0, .2);
+}
+
+/* ============================================================
+   HERO DE LA PORTADA (index.md)
+   ============================================================ */
+.md-typeset .ateca-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 15rem;
+  margin: 0 0 2.2rem;
+  padding: 2.2rem 2rem;
+  border-radius: .8rem;
+  overflow: hidden;
+  color: #fff;
+  background:
+    linear-gradient(90deg,
+      rgba(12, 61, 135, .97) 0%,
+      rgba(12, 61, 135, .92) 48%,
+      rgba(12, 61, 135, .3) 78%,
+      rgba(12, 61, 135, .05) 100%),
+    url("../img/ateca/aula-ateca-hero.jpg") center right / cover no-repeat;
+  box-shadow: 0 .8rem 2rem rgba(12, 61, 135, .25);
+}
+
+.md-typeset .ateca-hero__texto {
+  max-width: 26rem;
+}
+
+.md-typeset .ateca-hero__eyebrow {
+  margin: 0 0 .9rem;
+  padding-left: 2.6rem;
+  background: linear-gradient(var(--ateca-amarillo), var(--ateca-amarillo)) left center / 2rem 2px no-repeat;
+  color: var(--ateca-amarillo);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.md-typeset .ateca-hero h1 {
+  margin: 0 0 .8rem;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 800 !important;
+  line-height: 1.05;
+  letter-spacing: -.01em;
+  text-align: left;
+}
+
+.md-typeset .ateca-hero h1 span {
+  display: block;
+  color: var(--ateca-amarillo);
+}
+
+.md-typeset .ateca-hero p {
+  margin: 0;
+  color: rgba(255, 255, 255, .92);
+  font-size: .82rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .ateca-hero {
+    min-height: 0;
+    padding: 1.6rem 1.3rem;
+    background:
+      linear-gradient(rgba(12, 61, 135, .9), rgba(12, 61, 135, .9)),
+      url("../img/ateca/aula-ateca-hero.jpg") center / cover no-repeat;
+  }
+  .md-typeset .ateca-hero h1 { font-size: 1.8rem; }
+}
+
+/* ============================================================
+   FICHA DE EQUIPO (imagen + datos clave en dos columnas)
+   ============================================================ */
+.md-typeset .ficha-equipo {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1.4rem;
+  align-items: center;
+  margin: 0 0 1.8rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--ateca-azul) 18%, transparent);
+  border-radius: .8rem;
+  background: color-mix(in srgb, var(--ateca-azul) 4%, var(--md-default-bg-color));
+}
+
+.md-typeset .ficha-equipo img {
+  width: 100%;
+  margin: 0;
+  border-radius: .5rem;
+}
+
+.md-typeset .ficha-equipo ul {
+  margin: 0;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .ficha-equipo { grid-template-columns: 1fr; }
+  .md-typeset .ficha-equipo img { max-width: 12rem; margin: 0 auto; }
+}

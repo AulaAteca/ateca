@@ -9,18 +9,11 @@ h1 {
   text-align: center;
 }
 
-/* Resaltar los títulos H2 (##) */
-h2 {
-  color: #777;         /* Color Índigo estándar (puedes usar también #4b0082 para índigo oscuro) */
-  font-weight: 600 !important; /* Fuerza el grosor al máximo (Ultra-Bold) */
-  border-bottom: 3px solid #777; /* Línea inferior a juego con el color índigo */
-  padding-bottom: 3px;    /* Espacio entre el texto y la línea */
-  margin-top: 33px;       /* Espacio superior para separar del párrafo anterior */
-}
+/* Títulos H2 (##): estilo de banda azul, definido en seccion.css */
 
 /* Resaltar los títulos H3 (###) */
 h3 {
-  color: #36a8b7;       /* Color naranja para contrastar */
+  color: #1f5fb8;       /* Azul medio ATECA */
   font-weight: 600 !important; /* Fuerza el grosor al máximo (Ultra-Bold) */
   margin-top: 22px;
 }
@@ -64,7 +57,7 @@ img {
   border-radius: 8px;
   padding: 1rem 1.2rem;
   overflow-x: auto;
-  border-left: 5px solid #00adef;
+  border-left: 5px solid #1f5fb8;
   box-shadow: 0 4px 12px #000;
   margin: 1.2rem 0;
 }
@@ -115,7 +108,7 @@ Importa la fuente si quieres usar Roboto Mono
 .md-typeset code.yercod {
   font-family: 'JetBrains Mono', monospace;
   background-color: #383838;
-  color: #00e676;
+  color: #ffc20e;
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.9em;
@@ -128,7 +121,7 @@ Clase específica para negrita en Arial Negra y Mayúsculas
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 900;           /* Hace la fuente más gruesa / negra */
   text-transform: uppercase;  /* Convierte todo el texto a mayúsculas */
-  color: #00e676;
+  color: #ffc20e;
   background-color: #383838;
   padding: 2px 6px;
   border-radius: 4px;

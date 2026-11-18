@@ -1,42 +1,33 @@
-# 🏫 ¿Qué es el Aula ATECA? { .card }
+<section class="ateca-hero">
+  <div class="ateca-hero__texto">
+    <p class="ateca-hero__eyebrow">CIFP Villa de Agüimes · Aula ATECA</p>
+    <h1>Aula de <span>Tecnología Aplicada</span></h1>
+    <p>Un espacio que se parece a un entorno de trabajo real: equipos de los sectores productivos, simuladores y tecnología al servicio de todos los módulos profesionales.</p>
+  </div>
+</section>
 
-> El **Aula ATECA** (Aula de Tecnología Aplicada) del **CIFP Villa de Agüimes** es un espacio equipado con tecnología para que alumnado y profesorado de cualquier familia profesional diseñe, cree, experimente y comunique en un entorno similar al de las empresas del sector.
+El **Aula ATECA** es el lugar del centro donde alumnado y profesorado de **cualquier familia profesional** pueden diseñar, fabricar, grabar, experimentar y presentar su trabajo con el mismo tipo de equipos que se usan en las empresas. No es un aula de informática ni un plató: es un espacio flexible que se reorganiza según el proyecto de cada grupo.
 
-## Origen del aula { .seccion }
+Nació dentro del **Plan de Modernización de la Formación Profesional**, en la actuación de *conversión de aulas en espacios de tecnología aplicada*, financiada por el Ministerio de Educación y la Unión Europea (**NextGenerationEU**). Puedes consultar el programa en la web de la [Consejería de Educación del Gobierno de Canarias](https://www.gobiernodecanarias.org/educacion/web/programas_cofinanciados/nextgenerationeu/plan-fp-crecimiento-economico-social-empleabilidad/conversion_aulas_espacios_tecnologia_aplicada/){target="_blank"}.
 
-El aula se puso en marcha dentro del **Plan de Modernización de la Formación Profesional**, actuación *«Conversión de aulas en espacios de tecnología aplicada [ATECA]»*, financiada por el Ministerio de Educación y Formación Profesional y la Unión Europea (**NextGenerationEU**), con una dotación de 55.000 € por aula y ejecución entre 2021 y 2022.
+Esta web reúne los **manuales de uso** de cada equipo del aula: cómo se enciende, cómo se configura, qué hacer cuando algo falla y cómo dejarlo listo para el siguiente grupo. Elige el equipo en el menú de la izquierda.
 
-Más información en la web de la [Consejería de Educación del Gobierno de Canarias](https://www.gobiernodecanarias.org/educacion/web/programas_cofinanciados/nextgenerationeu/plan-fp-crecimiento-economico-social-empleabilidad/conversion_aulas_espacios_tecnologia_aplicada/){target="_blank"}.
+## Cuatro espacios en una misma aula { .seccion }
 
-## Los 4 espacios del modelo ATECA { .seccion }
+El modelo ATECA organiza el aula en cuatro espacios según lo que se hace en cada uno:
 
-| Espacio | Función | Equipamiento típico |
+| Espacio | Para qué sirve | Equipamiento |
 |---|---|---|
-| **PRESENTA / INTERACTÚA** | Debates, videoconferencias, trabajo colaborativo | Pantalla táctil, megafonía, videoconferencia |
-| **CREA / DESARROLLA** | Diseño, creación y aplicación | Escáner e impresoras 3D, equipos informáticos, kit de robótica, equipos audiovisuales |
-| **EXPLORA** | Acercamiento virtual a entornos profesionales | Equipos de RV y RA, pizarra digital multimedia |
-| **INVESTIGA** | Metodologías activas (Design Thinking) | Sistema de presentación multimedia |
+| **Presenta / Interactúa** | Debates, videoconferencias y trabajo colaborativo | Pantalla interactiva, megafonía, videoconferencia |
+| **Crea / Desarrolla** | Diseñar, fabricar y producir | Impresoras y escáner 3D, equipos informáticos, audiovisuales |
+| **Explora** | Acercarse virtualmente a entornos profesionales | Gafas de realidad virtual y aumentada |
+| **Investiga** | Metodologías activas (Design Thinking, retos) | Sistema de presentación multimedia |
 
 ## Zonas de nuestra aula { .seccion }
 
-- Zona de presentaciones, debates, videoconferencias y trabajo colaborativo.
-- Zona de realidad virtual (VR) y aumentada (AR).
-- Zona de diseño y fabricación 3D.
-- Zona de grabación, edición y retransmisión de vídeo.
-- Zona de grabación, edición y retransmisión de audio y radio.
+![Zonas del Aula ATECA: realidad virtual, fabricación 3D, radio, vídeo, imagen y domótica](assets/img/ateca/aula-ateca-zonas.png){ width="760" }
 
-## 📚 Qué encontrarás en esta web { .seccion }
+En la práctica, esos cuatro espacios se reparten en seis zonas de trabajo: **realidad virtual y aumentada**, **diseño y fabricación 3D**, **radio y audio**, **vídeo y streaming** (con plató de croma), **edición de imagen e impresión** y **domótica**. Cada una tiene su propio apartado en el menú.
 
-| Sección | Contenido |
-|---|---|
-| 🕶️ [Gafas VR / AR](gafas/realidad-virtual-aumentada.md) | Meta Quest 2, tablets de realidad aumentada, [apps VR gratuitas por familia profesional](gafas/apps-vr-gratuitas.md) y [manual de trabajo 2026](gafas/manual-trabajo-2026.md) |
-| 🖥️ [Pantalla interactiva](pantalla/newline-lyra.md) | Newline Lyra TT-8621Q: pizarra digital, anotación y proyección inalámbrica |
-| 🖨️ [Impresora 3D](impresora/diseno-fabricacion-3d.md) | Artillery Genius Pro, Ultimaker, escáner IT3D Scan y [repositorios de diseños gratuitos](impresora/repositorios-disenos-3d.md) |
-| 🎙️ [Radio y Audio](radio/radio-audio.md) | Radio Entérate, grabación y edición de audio |
-| 🎥 [Vídeo y Streaming](video/video-streaming.md) | Producción multicámara, [plató de croma con ATEM Mini Pro](video/atem-mini-pro-croma.md) y [OBS Studio](video/obs.md) |
-| 🖼️ [Imagen](imagen/edicion-imagen-impresion.md) | Software de retoque, diseño vectorial y preparación para impresión |
-| 🏠 [Domótica](domotica/domotica-automatizacion.md) | Altavoces Sonos, audio en red y automatización |
-
-## 🔗 Enlaces { .seccion }
-
-- 🌐 [Web oficial del Aula ATECA del CIFP Villa de Agüimes](https://www3.gobiernodecanarias.org/medusa/proyecto/35014664-0006/){target="_blank"}
+!!! tip "¿Quieres usar el aula con tu grupo?"
+    El aula se reserva por franjas horarias desde el [sistema de reservas del centro](https://www3.gobiernodecanarias.org/educacion/cau_ce/reservas/35014664/edit_room.php?room=58){target="_blank"}. Antes de la sesión, revisa el manual del equipo que vayas a usar: casi todos los problemas habituales están resueltos ahí.
