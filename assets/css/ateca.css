@@ -1,0 +1,434 @@
+/* ============================================================
+   PALETA ATECA — azules y amarillo de la web oficial del aula
+   (https://www3.gobiernodecanarias.org/medusa/proyecto/35014664-0006/)
+   Requiere en mkdocs.yml: primary: custom · accent: custom
+   ============================================================ */
+:root {
+  --ateca-azul: #0c3d87;          /* cabecera de la web ATECA */
+  --ateca-azul-oscuro: #082c63;
+  --ateca-azul-medio: #1f5fb8;
+  --ateca-azul-claro: #7fa6dd;
+  --ateca-azul-fondo: #eaf1fb;
+  --ateca-amarillo: #ffc20e;      /* botón "Reservar ATECA" */
+}
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: var(--ateca-azul);
+  --md-primary-fg-color--light: var(--ateca-azul-medio);
+  --md-primary-fg-color--dark: var(--ateca-azul-oscuro);
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, .7);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--ateca-azul-medio);
+  --md-accent-fg-color--transparent: rgba(31, 95, 184, .1);
+  --md-accent-bg-color: #ffffff;
+  --md-accent-bg-color--light: rgba(255, 255, 255, .7);
+}
+
+/* Modo oscuro: enlaces y acento más luminosos para que se lean */
+[data-md-color-scheme="slate"][data-md-color-primary="custom"] {
+  --md-typeset-a-color: #8ab4ff;
+}
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: var(--ateca-amarillo);
+  --md-accent-fg-color--transparent: rgba(255, 194, 14, .12);
+}
+
+/* Fina línea amarilla bajo la cabecera, como acento de marca */
+.md-header {
+  box-shadow: inset 0 -3px 0 var(--ateca-amarillo), 0 0 .2rem rgba(0, 0, 0, .1), 0 .2rem .4rem rgba(0, 0, 0, .2);
+}
+
+/* ============================================================
+   CABECERA CON IMAGEN DE CADA PÁGINA  ·  .ateca-hero
+   Estructura (ver cualquier página):
+     <div class="ateca-hero" markdown>
+     ![](../assets/img/hero/x.jpg){ .ateca-hero__img .off-glb }
+     <div class="ateca-hero__texto"> eyebrow + h1 + p </div>
+     <p class="ateca-hero__credito">…</p>
+     </div>
+   Variante .ateca-hero--producto: la imagen va en un medallón
+   blanco a la derecha (fotos de producto con fondo blanco).
+   ============================================================ */
+.md-typeset .ateca-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 15rem;
+  margin: 0 0 1.4rem;
+  padding: 2.2rem 2rem;
+  border-radius: .8rem;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  background: linear-gradient(135deg, #0a3478 0%, #0c3d87 55%, #12489a 100%);
+  box-shadow: 0 .8rem 2rem rgba(12, 61, 135, .25);
+}
+
+/* El párrafo que envuelve la imagen no ocupa espacio */
+.md-typeset .ateca-hero > p:not(.ateca-hero__credito) {
+  margin: 0;
+}
+
+/* Foto a la derecha, fundida con el azul */
+.md-typeset .ateca-hero img.ateca-hero__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+  width: 64%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.md-typeset .ateca-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg,
+    #0c3d87 0%,
+    #0c3d87 36%,
+    rgba(12, 61, 135, .78) 52%,
+    rgba(12, 61, 135, .25) 75%,
+    rgba(12, 61, 135, .05) 100%);
+}
+
+/* Órbita discontinua decorativa */
+.md-typeset .ateca-hero::after {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  left: 38%;
+  width: 14rem;
+  height: 14rem;
+  border: 2px dashed rgba(255, 194, 14, .28);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.md-typeset .ateca-hero__texto {
+  position: relative;
+  max-width: 26rem;
+}
+
+.md-typeset .ateca-hero__eyebrow {
+  margin: 0 0 .9rem !important;
+  padding-left: 2.6rem;
+  background: linear-gradient(var(--ateca-amarillo), var(--ateca-amarillo)) left center / 2rem 2px no-repeat;
+  color: var(--ateca-amarillo) !important;
+  font-size: .62rem !important;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .ateca-hero h1 {
+  margin: 0 0 .8rem;
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 800 !important;
+  line-height: 1.05;
+  letter-spacing: -.01em;
+  text-align: left;
+}
+
+.md-typeset .ateca-hero h1 span {
+  display: block;
+  color: var(--ateca-amarillo);
+}
+
+.md-typeset .ateca-hero p {
+  margin: 0;
+  color: rgba(255, 255, 255, .92);
+  font-size: .8rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+/* Crédito de la foto (licencias Creative Commons) */
+.md-typeset .ateca-hero p.ateca-hero__credito {
+  position: absolute;
+  right: .8rem;
+  bottom: .45rem;
+  max-width: 60%;
+  color: rgba(255, 255, 255, .75);
+  font-size: .5rem;
+  line-height: 1.3;
+  text-align: right;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}
+.md-typeset .ateca-hero p.ateca-hero__credito a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Variante producto: medallón blanco con órbita */
+.md-typeset .ateca-hero--producto img.ateca-hero__img {
+  top: 50%;
+  right: 3rem;
+  z-index: 1;
+  width: 10.5rem;
+  height: 10.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  transform: translateY(-50%);
+  box-shadow: 0 .6rem 1.6rem rgba(0, 0, 0, .35);
+}
+.md-typeset .ateca-hero--producto::before {
+  background:
+    radial-gradient(circle at calc(100% - 8.25rem) 50%, rgba(255, 194, 14, .18) 0, transparent 9rem),
+    linear-gradient(135deg, #0a3478 0%, #0c3d87 55%, #1f5fb8 100%);
+}
+.md-typeset .ateca-hero--producto::after {
+  top: 50%;
+  left: auto;
+  right: 1.5rem;
+  width: 13.5rem;
+  height: 13.5rem;
+  transform: translateY(-50%);
+  border-color: rgba(255, 194, 14, .55);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .ateca-hero {
+    min-height: 0;
+    padding: 1.6rem 1.3rem;
+  }
+  .md-typeset .ateca-hero img.ateca-hero__img { width: 100%; }
+  .md-typeset .ateca-hero::before { background: rgba(12, 61, 135, .86); }
+  .md-typeset .ateca-hero h1 { font-size: 1.7rem; }
+  .md-typeset .ateca-hero--producto img.ateca-hero__img { display: none; }
+  .md-typeset .ateca-hero--producto::after { display: none; }
+  .md-typeset .ateca-hero p.ateca-hero__credito { max-width: 90%; }
+}
+
+/* ============================================================
+   BOTONES DE VÍDEO (fila de 3 bajo la cabecera)
+   ============================================================ */
+.md-typeset .video-botones {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  margin: 0 0 1.8rem;
+}
+
+.md-typeset a.video-boton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  min-height: 4.6rem;
+  padding: .8rem 1rem;
+  border-radius: .7rem;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, #0c3d87 0%, #1f5fb8 100%);
+  box-shadow: 0 .3rem .9rem rgba(12, 61, 135, .22);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 180ms, box-shadow 180ms;
+}
+
+.md-typeset a.video-boton::after {
+  content: "";
+  position: absolute;
+  top: -2.6rem;
+  right: -2.2rem;
+  z-index: -1;
+  width: 6rem;
+  height: 6rem;
+  border: 2px dashed rgba(255, 194, 14, .35);
+  border-radius: 50%;
+}
+
+.md-typeset a.video-boton:hover,
+.md-typeset a.video-boton:focus-visible {
+  color: #fff;
+  transform: translateY(-.15rem);
+  box-shadow: 0 .7rem 1.6rem rgba(12, 61, 135, .35);
+}
+
+.md-typeset .video-boton__play {
+  position: relative;
+  flex: 0 0 2.3rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: var(--ateca-amarillo);
+  box-shadow: 0 0 0 .3rem rgba(255, 194, 14, .2);
+  transition: transform 180ms;
+}
+.md-typeset .video-boton__play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  border-style: solid;
+  border-width: .45rem 0 .45rem .72rem;
+  border-color: transparent transparent transparent #0c3d87;
+  transform: translate(-50%, -50%);
+}
+.md-typeset a.video-boton:hover .video-boton__play {
+  transform: scale(1.1);
+}
+
+.md-typeset .video-boton__texto {
+  display: flex;
+  flex-direction: column;
+  gap: .12rem;
+  min-width: 0;
+}
+.md-typeset .video-boton__meta {
+  color: var(--ateca-amarillo);
+  font-size: .52rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.md-typeset .video-boton__titulo {
+  color: #fff;
+  font-size: .76rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.md-typeset .video-boton__canal {
+  color: rgba(255, 255, 255, .72);
+  font-size: .58rem;
+}
+
+/* Botón de descarga bajo la fila de vídeos */
+.md-typeset .descarga-pdf {
+  margin: -0.8rem 0 1.8rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .video-botones { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   TABLA DE APPS VR (icono + nombre + descripción, filas por familia)
+   ============================================================ */
+.md-typeset .tabla-apps {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid color-mix(in srgb, var(--ateca-azul) 15%, transparent);
+  border-radius: .6rem;
+  overflow: hidden;
+  font-size: .72rem;
+}
+.md-typeset .tabla-apps th {
+  padding: .7rem .8rem;
+  background: var(--ateca-azul);
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+.md-typeset .tabla-apps td {
+  padding: .55rem .8rem;
+  border-top: 1px solid color-mix(in srgb, var(--ateca-azul) 10%, transparent);
+  vertical-align: middle;
+}
+.md-typeset .tabla-apps td.tabla-apps__icono {
+  width: 7.4rem;
+  text-align: center;
+}
+.md-typeset .tabla-apps td.tabla-apps__icono img {
+  display: inline-block;
+  width: 6.4rem;
+  height: 3.6rem;
+  margin: 0;
+  border-radius: .45rem;
+  object-fit: cover;
+  box-shadow: 0 .15rem .45rem rgba(0, 0, 0, .25);
+}
+.md-typeset .tabla-apps td.tabla-apps__nombre {
+  width: 11rem;
+  font-weight: 700;
+}
+.md-typeset .tabla-apps td p { margin: 0; text-align: left; }
+
+/* Fila separadora de familia profesional */
+.md-typeset .tabla-apps tr.tabla-apps__familia td {
+  padding: .6rem .9rem;
+  border-top: 2px solid var(--ateca-azul-claro);
+  border-left: 5px solid var(--ateca-amarillo);
+  background: linear-gradient(90deg, #dbe7f8 0%, #eef4fc 70%, #f6f9fe 100%);
+  color: var(--ateca-azul);
+  font-size: .74rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+[data-md-color-scheme="slate"] .md-typeset .tabla-apps tr.tabla-apps__familia td {
+  background: linear-gradient(90deg, rgba(12, 61, 135, .7) 0%, rgba(31, 95, 184, .25) 100%);
+  color: #c9dcff;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .tabla-apps td.tabla-apps__nombre { width: auto; }
+  .md-typeset .tabla-apps td.tabla-apps__icono { width: 5rem; }
+  .md-typeset .tabla-apps td.tabla-apps__icono img { width: 4.4rem; height: 2.5rem; }
+}
+
+/* ============================================================
+   TABLA DE CONTENIDOS: cada entrada en una sola línea
+   ============================================================ */
+.md-nav--secondary .md-nav__link {
+  min-width: 0;
+}
+.md-nav--secondary .md-nav__link .md-ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* ============================================================
+   DIAGRAMAS SVG: tarjeta suave alrededor
+   ============================================================ */
+.md-typeset img.diagrama {
+  margin: 1rem auto 1.4rem;
+  border-radius: .8rem;
+  box-shadow: 0 .4rem 1.4rem rgba(12, 61, 135, .12);
+}
+
+/* ============================================================
+   FICHA DE EQUIPO (imagen + datos clave en dos columnas)
+   ============================================================ */
+.md-typeset .ficha-equipo {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 1.4rem;
+  align-items: center;
+  margin: 0 0 1.8rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid color-mix(in srgb, var(--ateca-azul) 18%, transparent);
+  border-radius: .8rem;
+  background: color-mix(in srgb, var(--ateca-azul) 4%, var(--md-default-bg-color));
+}
+
+.md-typeset .ficha-equipo img {
+  width: 100%;
+  margin: 0;
+  border-radius: .5rem;
+}
+
+.md-typeset .ficha-equipo ul {
+  margin: 0;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .ficha-equipo { grid-template-columns: 1fr; }
+  .md-typeset .ficha-equipo img { max-width: 12rem; margin: 0 auto; }
+}
+.md-typeset .descarga-pdf p { text-align: center; }

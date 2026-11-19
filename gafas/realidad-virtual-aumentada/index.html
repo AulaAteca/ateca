@@ -1,0 +1,1597 @@
+<!DOCTYPE html><html lang="es" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación del Aula de Tecnología Aplicada (ATECA) del CIFP Villa de Agüimes">
+      
+      
+      
+        <link rel="canonical" href="https://aulaateca.github.io/ateca/gafas/realidad-virtual-aumentada/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../meta-quest-2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>VR y AR en el aula - AULA ATECA</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/ateca.css">
+    
+      <link rel="stylesheet" href="../../assets/css/extra.css">
+    
+      <link rel="stylesheet" href="../../assets/css/cards.css">
+    
+      <link rel="stylesheet" href="../../assets/css/seccion.css">
+    
+      <link rel="stylesheet" href="../../assets/css/practica.css">
+    
+      <link rel="stylesheet" href="../../assets/css/videos.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#realidad-virtual-y-aumentada" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="AULA ATECA" class="md-header__button md-logo" aria-label="AULA ATECA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AULA ATECA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              VR y AR en el aula
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Modo oscuro" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Modo claro" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AulaAteca/ateca" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AULA ATECA" class="md-nav__button md-logo" aria-label="AULA ATECA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    AULA ATECA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AulaAteca/ateca" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏫 Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🕶️ AR / VR (gafas)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🕶️ AR / VR (gafas)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VR y AR en el aula
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VR y AR en el aula
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#que-es-la-realidad-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la realidad virtual?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-la-realidad-aumentada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la realidad aumentada?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-podemos-usar-en-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué podemos usar en clase
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué podemos usar en clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apps-de-ar-para-las-tablets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apps de AR para las tablets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ideas-por-familia-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ideas por familia profesional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-saber-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para saber más
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta-quest-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Meta Quest 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apps-vr-gratuitas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apps VR gratuitas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simulwind/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SimulWind
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../onirix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Onirix Studio (AR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3">
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖥️ Pantalla interactiva
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖥️ Pantalla interactiva
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pantalla/newline-lyra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Newline Lyra TT-8621Q
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖨️ Impresora 3D
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖨️ Impresora 3D
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/diseno-fabricacion-3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diseño e impresión 3D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/artillery-genius-pro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Artillery Genius Pro
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/ultimaker-s3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ultimaker S3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impresora/repositorios-disenos-3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diseños 3D gratuitos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5">
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎙️ Radio y Audio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🎙️ Radio y Audio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../radio/radio-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Radio y audio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6">
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎥 Vídeo y Streaming
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🎥 Vídeo y Streaming
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../video/video-streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vídeo y streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../video/atem-mini-pro-croma/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ATEM Mini Pro (croma)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../video/obs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OBS Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7">
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖼️ Imagen
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🖼️ Imagen
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../imagen/edicion-imagen-impresion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Edición e impresión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8">
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 Domótica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🏠 Domótica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../domotica/domotica-automatizacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sonos y domótica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#que-es-la-realidad-virtual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la realidad virtual?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-la-realidad-aumentada" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es la realidad aumentada?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-podemos-usar-en-clase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qué podemos usar en clase
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Qué podemos usar en clase">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apps-de-ar-para-las-tablets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apps de AR para las tablets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ideas-por-familia-profesional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ideas por familia profesional
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-saber-mas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para saber más
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<div class="ateca-hero">
+<p><img alt="Alumno del CIFP Villa de Agüimes usando las Meta Quest 2 en el Aula ATECA" class="ateca-hero__img off-glb" src="../../assets/img/hero/vr-ar.jpg"></p>
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">AR / VR (gafas) · Aula ATECA</p>
+<h1 id="realidad-virtual-y-aumentada">Realidad virtual <span>y aumentada</span></h1>
+<p>Qué son, en qué se diferencian y qué podemos hacer con ellas en clase, en cualquier familia profesional.</p>
+</div>
+</div>
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=PLpDCK3Zy7Q" target="_blank" rel="noopener" title="Diferencia entre realidad virtual y aumentada (LearnFree en Español)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 2 min</span><span class="video-boton__titulo">Diferencia entre realidad virtual y aumentada</span><span class="video-boton__canal">LearnFree en Español</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=5OeT2ehSe30" target="_blank" rel="noopener" title="VR y AR: tecnologías inmersivas en el aula (eduKmos)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 7 min</span><span class="video-boton__titulo">VR y AR: tecnologías inmersivas en el aula</span><span class="video-boton__canal">eduKmos</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=kpZP57SzJ38" target="_blank" rel="noopener" title="Realidad aumentada en un instituto real (K-tuin Educación)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 3 min</span><span class="video-boton__titulo">Realidad aumentada en un instituto real</span><span class="video-boton__canal">K-tuin Educación</span></span></a>
+</div>
+
+<p>La <strong>realidad virtual (VR)</strong> y la <strong>realidad aumentada (AR)</strong> son dos formas de mezclar lo digital con lo que vemos, pero funcionan al revés: la VR nos saca del aula y nos mete en otro lugar; la AR deja el aula donde está y le añade información encima. En el Aula ATECA tenemos equipo para las dos.</p>
+<h2 class="seccion" id="que-es-la-realidad-virtual">¿Qué es la realidad virtual?</h2>
+<p>Con unas gafas de VR la persona deja de ver el aula y pasa a estar <strong>dentro de un entorno generado por ordenador</strong>: un taller, un aerogenerador a 80 m de altura, un quirófano o una planta industrial. Las gafas siguen el movimiento de la cabeza y de las manos (seis grados de libertad), así que se puede caminar, girarse, coger objetos y usar herramientas como en la realidad.</p>
+<p><strong>Qué se puede hacer con ella en clase:</strong></p>
+<ul>
+<li><strong>Practicar procedimientos peligrosos o caros</strong> sin riesgo y sin gastar material: maniobras en altura, uso de extintores, maquinaria de carpintería, montajes eléctricos.</li>
+<li><strong>Visitar lugares a los que no se puede ir</strong>: empresas del sector, destinos turísticos, museos, el interior del cuerpo humano.</li>
+<li><strong>Repetir tantas veces como haga falta</strong> un mismo ejercicio, con el simulador corrigiendo cada intento.</li>
+<li><strong>Entrenar habilidades blandas</strong>: entrevistas de trabajo, atención al cliente o gestión de conflictos con personajes virtuales.</li>
+</ul>
+<p>En el aula usamos las <strong><a href="../meta-quest-2/">Meta Quest 2</a></strong>, gafas autónomas que no necesitan ordenador. Para simuladores más exigentes, como <a href="../simulwind/">SimulWind</a>, se conectan a un PC.</p>
+<h2 class="seccion" id="que-es-la-realidad-aumentada">¿Qué es la realidad aumentada?</h2>
+<p>La AR <strong>superpone contenido digital sobre el mundo real</strong> a través de la cámara de una tablet o un móvil (o del <em>passthrough</em> de unas gafas). El contenido se "ancla" a algo que la cámara reconoce:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de anclaje</th>
+<th>Qué reconoce la cámara</th>
+<th>Ejemplo en el aula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Imagen o marcador</strong></td>
+<td>Una foto, un cartel, la página de un libro</td>
+<td>Un póster que, al enfocarlo, muestra el motor en 3D</td>
+</tr>
+<tr>
+<td><strong>Superficie</strong></td>
+<td>El suelo o una mesa</td>
+<td>Colocar una máquina a tamaño real sobre la mesa del taller</td>
+</tr>
+<tr>
+<td><strong>Espacio</strong></td>
+<td>Un entorno escaneado previamente</td>
+<td>Instrucciones de mantenimiento flotando junto a cada equipo de una sala</td>
+</tr>
+<tr>
+<td><strong>Geolocalización</strong></td>
+<td>La posición GPS</td>
+<td>Una ruta turística con contenido en cada parada</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Qué se puede hacer con ella en clase:</strong></p>
+<ul>
+<li><strong>Ver en 3D lo que el libro muestra en 2D</strong>: órganos, piezas mecánicas, moléculas, edificios.</li>
+<li><strong>Medir y orientarse</strong> con la cámara: distancias, ángulos, áreas.</li>
+<li><strong>Crear materiales propios</strong>: carteles, fichas o maquetas que "cobran vida" al enfocarlos, diseñados por el propio alumnado con <a href="../onirix/">Onirix Studio</a>.</li>
+</ul>
+<p>Para AR usamos las <strong>tablets Samsung Galaxy Tab A 10.1</strong> del aula y los móviles del alumnado.</p>
+<h2 class="seccion" id="que-podemos-usar-en-clase">Qué podemos usar en clase</h2>
+<p>Las 6 gafas del aula comparten <strong>una única cuenta Meta del centro</strong> (el porqué está explicado en el <a href="../meta-quest-2/">manual de las Quest 2</a>). Eso condiciona qué contenidos funcionan en todas las gafas a la vez:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de contenido</th>
+<th>Origen</th>
+<th>¿Las 6 gafas a la vez?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>APK</strong></td>
+<td>itch.io, GitHub, web del desarrollador, SideQuest</td>
+<td>✅ Normalmente sí</td>
+</tr>
+<tr>
+<td><strong>WebXR</strong></td>
+<td>Navegador de las gafas (Meta Quest Browser)</td>
+<td>✅ Sí, sin instalar nada</td>
+</tr>
+<tr>
+<td><strong>Vídeos 360°</strong></td>
+<td>Copiados a las gafas con ADB</td>
+<td>✅ Sí</td>
+</tr>
+<tr>
+<td><strong>Apps de la tienda de Meta</strong></td>
+<td>Meta Horizon Store</td>
+<td>❌ Solo en una gafa a la vez</td>
+</tr>
+<tr>
+<td><strong>Experiencias WebAR</strong></td>
+<td>Navegador de la tablet o el móvil (Onirix)</td>
+<td>✅ Sí, con un enlace o un QR</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Límite de la cuenta única</p>
+<p>Una misma cuenta <strong>no puede abrir la misma app de la tienda de Meta en varias gafas a la vez</strong> (pasa también con muchas apps gratuitas). Las <strong>APK</strong> instaladas a mano y las <strong>experiencias web</strong> normalmente no tienen esa comprobación. Si una app imprescindible de la tienda se bloquea, la solución es crear cuentas separadas solo para esa actividad.</p>
+</div>
+<h3 id="apps-de-ar-para-las-tablets">Apps de AR para las tablets</h3>
+<p><strong>Medición y orientación</strong> (Energía y Agua, Edificación, Instalaciones)</p>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.grymala.aruler" target="_blank">AR Ruler</a> – distancias, áreas y volúmenes.</li>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/educatablet/recurso/transportador-virtual" target="_blank">Transportador de ángulos AR</a> – medición de ángulos.</li>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/educatablet/recurso/brujula-con-realidad-aumentada" target="_blank">Brújula AR</a> – orientación y navegación.</li>
+</ul>
+<p><strong>Anatomía</strong> (Sanidad)</p>
+<ul>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/recursosdigitales/2015/01/24/anatomy-4d/" target="_blank">Anatomy 4D</a> – cuerpo humano en 4D.</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.onebyoneapps.arhumanorgans" target="_blank">AR Human Organs</a> – órganos humanos en 3D.</li>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/recursosdigitales/2014/11/25/essential-skeleton-4/" target="_blank">Essential Skeleton 3D</a> – esqueleto interactivo.</li>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/recursosdigitales/2015/01/24/the-brain-in-3d/" target="_blank">The Brain in 3D</a> – cerebro humano en 3D.</li>
+<li><a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/recursosdigitales/2020/05/08/anatomyou/" target="_blank">Anatomyou</a> – endoscopio virtual.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Antes de la clase con tablets</p>
+<p>Instala las apps <strong>el día anterior</strong> (descargan modelos 3D pesados), carga las tablets (la cámara y la GPU gastan mucha batería) y prepara una superficie plana y bien iluminada. Al abrir la app, explica al alumnado que <strong>mueva despacio la tablet</strong> unos segundos para que reconozca el entorno.</p>
+</div>
+<h2 class="seccion" id="ideas-por-familia-profesional">Ideas por familia profesional</h2>
+<ul>
+<li><strong>Seguridad y Medio Ambiente</strong>: simulacros de incendio o evacuación imposibles de reproducir en el centro (inspirado en proyectos como <em>INNOFIRE-VR</em>).</li>
+<li><strong>Energía y Agua</strong>: mantenimiento de aerogeneradores con <a href="../simulwind/">SimulWind</a> y visitas virtuales a instalaciones.</li>
+<li><strong>Sanidad</strong>: anatomía en 3D con las tablets y primeros auxilios en VR.</li>
+<li><strong>Hostelería y Turismo</strong>: vídeos 360° como "excursión virtual" antes de una FCT y rutas turísticas en AR creadas por el alumnado.</li>
+<li><strong>Administración y Gestión</strong>: entrevistas de trabajo y atención al cliente simuladas.</li>
+<li><strong>Informática y Comunicaciones</strong>: crear experiencias WebAR con Onirix y escenas WebXR propias.</li>
+</ul>
+<p>Tienes un catálogo completo en <a href="../apps-vr-gratuitas/">Apps VR gratuitas por familia profesional</a>.</p>
+<h2 class="seccion" id="para-saber-mas">Para saber más</h2>
+<div class="grid">
+<div class="admonition info">
+<p class="admonition-title">Realidad virtual (VR)</p>
+<ul>
+<li><a href="https://www.meta.com/help/quest/" target="_blank">Ayuda oficial de Meta Quest</a></li>
+<li><a href="https://www.meta.com/experiences/" target="_blank">Meta Horizon Store: apps y experiencias</a></li>
+<li><a href="https://sidequestvr.com/" target="_blank">SideQuest: apps fuera de la tienda</a></li>
+<li><a href="https://vrfp.es/familias-profesionales/todas-familias-profesionales/" target="_blank">VRFP: simuladores por familia profesional</a></li>
+<li><a href="https://aulasateca.com/simuladores-de-realidad-virtual-para-fp/" target="_blank">Simuladores VR para FP (Aulas ATECA)</a></li>
+<li><a href="https://immersiveweb.dev/" target="_blank">WebXR: realidad virtual desde el navegador</a></li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Realidad aumentada (AR)</p>
+<ul>
+<li><a href="https://www.onirix.com/" target="_blank">Onirix Studio: crear experiencias WebAR</a></li>
+<li><a href="https://docs.onirix.com/" target="_blank">Documentación de Onirix</a></li>
+<li><a href="https://developers.google.com/ar/devices" target="_blank">Google ARCore: dispositivos compatibles</a></li>
+<li><a href="https://sketchfab.com/" target="_blank">Sketchfab: modelos 3D para AR</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WebAR" target="_blank">WebAR en Wikipedia</a></li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.expand"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

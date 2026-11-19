@@ -1,0 +1,70 @@
+/* ============================================================
+   TÍTULO H1 CONVERTIDO EN CABECERA  ·  # Título { .card }
+   Inspirado en la portada de la web ATECA: fondo azul,
+   antetítulo amarillo con guion y órbita decorativa.
+   ============================================================ */
+.md-typeset h1.card {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 2rem;
+  padding: 2.1rem 1.8rem 1.6rem;
+  border: 0;
+  border-radius: .8rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(255, 194, 14, .16) 0, transparent 38%),
+    linear-gradient(135deg, #0c3d87 0%, #12489a 55%, #1f5fb8 100%);
+  box-shadow: 0 .6rem 1.6rem rgba(12, 61, 135, .25);
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800 !important;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  text-align: left;
+}
+
+/* Antetítulo: — AULA ATECA · CIFP VILLA DE AGÜIMES */
+.md-typeset h1.card::before {
+  content: "Aula ATECA · CIFP Villa de Agüimes";
+  display: block;
+  margin-bottom: .9rem;
+  padding-left: 2.6rem;
+  background: linear-gradient(#ffc20e, #ffc20e) left center / 2rem 2px no-repeat;
+  color: #ffc20e;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+/* Órbita discontinua decorativa (como el logo de la web) */
+.md-typeset h1.card::after {
+  content: "";
+  position: absolute;
+  top: -4.5rem;
+  right: -3.5rem;
+  width: 13rem;
+  height: 13rem;
+  border: 2px dashed rgba(255, 194, 14, .35);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Segunda línea (el texto en cursiva del título) */
+.md-typeset h1.card em {
+  display: block;
+  margin-top: .55rem;
+  color: rgba(255, 255, 255, .85);
+  font-size: .95rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset h1.card {
+    padding: 1.6rem 1.2rem 1.3rem;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* Fila de vídeos de YouTube (3 por fila en escritorio, 1 en móvil) */
+.md-typeset .video-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1.2rem 0 1.6rem;
+}
+@media screen and (min-width: 45em) {
+  .md-typeset .video-row { grid-template-columns: repeat(3, 1fr); }
+}
+.md-typeset .video-row figure {
+  margin: 0;
+  padding: .5rem;
+  border-radius: .6rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, var(--md-default-bg-color));
+  box-shadow: 0 .2rem .6rem rgba(0,0,0,.15);
+}
+.md-typeset .video-row iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: .4rem;
+}
+.md-typeset .video-row figcaption {
+  margin: .4rem 0 0;
+  font-size: .7rem;
+  text-align: center;
+  opacity: .85;
+}
