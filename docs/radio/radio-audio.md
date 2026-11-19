@@ -1,14 +1,31 @@
-# 📻 Radio y Audio { .card }
+<div class="ateca-hero" markdown>
+
+![Entérate](../assets/img/hero/radio.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Radio y audio · Aula ATECA</p>
+<h1>Radio <span>Entérate</span></h1>
+<p>La emisora escolar del CIFP Villa de Agüimes: guion, grabación, edición y mezcla de programas con software libre.</p>
+</div>
+<p class="ateca-hero__credito">Foto: <a href="https://commons.wikimedia.org/wiki/File:Radio_WWOZ_New_Orleans_studio_October_2009_26.jpg" target="_blank" rel="noopener">Infrogmation of New Orleans</a> · CC BY-SA 4.0 · Wikimedia Commons</p>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=l6cbUhjeLo4" target="_blank" rel="noopener" title="Cómo hacer un programa de radio (Educar Portal)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 3 min</span><span class="video-boton__titulo">Cómo hacer un programa de radio</span><span class="video-boton__canal">Educar Portal</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=A8APjp4g84U" target="_blank" rel="noopener" title="Audacity en 5 pasos (Tutoriales Youtuber)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 8 min</span><span class="video-boton__titulo">Audacity en 5 pasos</span><span class="video-boton__canal">Tutoriales Youtuber</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=z1S7Oyxe-rw" target="_blank" rel="noopener" title="Mixxx, software de DJ gratuito (TecnologiaDJ)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 16 min</span><span class="video-boton__titulo">Mixxx, software de DJ gratuito</span><span class="video-boton__canal">TecnologiaDJ</span></span></a>
+</div>
 
 > El Aula ATECA da soporte a **Radio Entérate**, la emisora escolar del CIFP Villa de Agüimes, donde el alumnado produce programas educativos y divulgativos. Este manual cubre el flujo de trabajo de grabación/edición y las herramientas disponibles.
 
-## 1. Radio Entérate (emisora escolar) { .seccion }
+## 1. Radio Entérate { .seccion }
 
 Proyecto de radio educativa gestionado por alumnado y profesorado del centro, orientado a desarrollar creatividad, comunicación oral y trabajo en equipo.
 
-### 1.1 Flujo de trabajo de un programa
+### 1.1 Flujo de un programa
 
-![Flujo de producción de un programa de Radio Entérate](../assets/img/rad/radio-flujo.svg){ width="800" }
+![Flujo de producción de un programa de Radio Entérate](../assets/img/rad/radio-flujo.svg){ .diagrama .off-glb }
 
 1. **Guion**: se prepara escaleta con bloques, tiempos y locutores. Reparte turnos de palabra por escrito para evitar solapamientos en la grabación.
 2. **Grabación**: en el aula, con micrófono conectado al PC y **Audacity** abierto en una pista estéreo a 44.1 kHz. Haz una prueba de 10 segundos antes de grabar el programa completo para comprobar niveles.
@@ -23,7 +40,7 @@ Proyecto de radio educativa gestionado por alumnado y profesorado del centro, or
 - Guarda el proyecto de Audacity (`.aup3`) además del MP3 exportado, por si hay que retocar algo más adelante.
 - Archiva cada programa con un nombre consistente: `AAAAMMDD-titulo-programa.mp3`, para poder encontrarlo fácilmente en el histórico de la emisora.
 
-## 2. Audacity — edición de audio { .seccion }
+## 2. Audacity { .seccion }
 
 Software libre y gratuito, estándar de facto en educación para grabación y edición de audio multipista.
 
@@ -44,7 +61,7 @@ Software libre y gratuito, estándar de facto en educación para grabación y ed
 | Deshacer | Ctrl + Z |
 | Exportar como MP3 | Archivo → Exportar → Exportar como MP3 |
 
-## 3. MIXXX — software para DJs { .seccion }
+## 3. MIXXX { .seccion }
 
 Herramienta libre para mezclar música en directo (crossfader, control de BPM, cue points), útil para separadores musicales del programa o proyectos de eventos del centro.
 

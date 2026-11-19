@@ -1,4 +1,21 @@
-# 📦 Diseños 3D gratuitos para imprimir *Webs y canales donde buscar por nombre o temática* { .card }
+<div class="ateca-hero" markdown>
+
+![gratuitos](../assets/img/hero/repositorios-3d.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Impresora 3D · Aula ATECA</p>
+<h1>Diseños 3D <span>gratuitos</span></h1>
+<p>Webs y canales donde buscar por nombre o temática un diseño listo para editar e imprimir.</p>
+</div>
+<p class="ateca-hero__credito">Foto: <a href="https://commons.wikimedia.org/wiki/File:3D_Printed_Objects_3D_Printer_1257.jpg" target="_blank" rel="noopener">Trevor Prentice</a> · CC BY-SA 2.0 · Wikimedia Commons</p>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=lQ0duSXl0KY" target="_blank" rel="noopener" title="5 webs para descargar diseños STL (DASSLOGIC)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 7 min</span><span class="video-boton__titulo">5 webs para descargar diseños STL</span><span class="video-boton__canal">DASSLOGIC</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=RTBGTdESolA" target="_blank" rel="noopener" title="Descargar e imprimir un diseño de Thingiverse (Mati Devia Tech)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 7 min</span><span class="video-boton__titulo">Descargar e imprimir un diseño de Thingiverse</span><span class="video-boton__canal">Mati Devia Tech</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=kUCXtIxQKcw" target="_blank" rel="noopener" title="Licencias Creative Commons explicadas (YUCAAN)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 7 min</span><span class="video-boton__titulo">Licencias Creative Commons explicadas</span><span class="video-boton__canal">YUCAAN</span></span></a>
+</div>
 
 > Antes de modelar una pieza desde cero, merece la pena comprobar si ya existe un diseño listo para editar e imprimir. Aquí tienes las webs y canales recomendados por el Aula ATECA, donde puedes **buscar por nombre o temática**. Complementa al manual [Diseño e impresión 3D](diseno-fabricacion-3d.md).
 
@@ -117,7 +134,7 @@ En estos canales se publican diseños 3D a diario. Usa el buscador de Telegram d
 4. **Editar si es necesario** en TinkerCAD o FreeCAD (escalado, corte, añadir texto o el logo del centro) antes de laminar.
 5. **Laminar con Ultimaker Cura** y lanzar la impresión en la Artillery Genius Pro o la Ultimaker del aula (ver [Diseño e impresión 3D](diseno-fabricacion-3d.md)).
 
-## Licencias: qué se puede hacer con un diseño { .seccion }
+## Licencias de los diseños { .seccion }
 
 La mayoría de estos repositorios usan licencias **Creative Commons**. Antes de imprimir, modificar o redistribuir un diseño, comprueba qué permite exactamente:
 

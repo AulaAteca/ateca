@@ -1,4 +1,20 @@
-# 🖥️ Pantalla interactiva Newline Lyra *Modelo TT-8621Q · serie Q · 86"* { .card }
+<div class="ateca-hero" markdown>
+
+![TT-8621Q](../assets/img/hero/newline-lyra.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Pantalla interactiva · Aula ATECA</p>
+<h1>Newline Lyra <span>TT-8621Q</span></h1>
+<p>Pizarra digital de 86" en 4K: anotación sobre cualquier contenido, proyección inalámbrica y apps para el aula.</p>
+</div>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=wCeUUvvq7Bg" target="_blank" rel="noopener" title="Primeros pasos con la pantalla Newline (IES · Jefatura Vespertino)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 3 min</span><span class="video-boton__titulo">Primeros pasos con la pantalla Newline</span><span class="video-boton__canal">IES · Jefatura Vespertino</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=ZNd8-nDuBgI" target="_blank" rel="noopener" title="Introducción al monitor Newline Lyra (CP Juan de Lanuza)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 8 min</span><span class="video-boton__titulo">Introducción al monitor Newline Lyra</span><span class="video-boton__canal">CP Juan de Lanuza</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=fm5pv16KZCU" target="_blank" rel="noopener" title="Compartir pantalla con Newline Cast (cddaragon)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 4 min</span><span class="video-boton__titulo">Compartir pantalla con Newline Cast</span><span class="video-boton__canal">cddaragon</span></span></a>
+</div>
 
 !!! info "OBJETIVOS"
     Este manual explica cómo **encender, conectar y usar** la pantalla interactiva **Newline Lyra TT-8621Q** del aula ATECA: pizarra digital, anotación sobre cualquier contenido, proyección inalámbrica desde portátiles y móviles, y las herramientas incluidas para el aula.
@@ -11,7 +27,7 @@
 
 ## **La pantalla** { .seccion }
 
-### 1. Características principales
+### 1. Características
 
 | Característica | TT-8621Q |
 |---|---|
@@ -41,7 +57,7 @@
 !!! warning "Apagado correcto"
     Apaga siempre desde el botón antes de cortar la corriente. Un corte brusco puede dañar el panel. No la enciendas y apagues muchas veces seguidas.
 
-### 3. Botones frontales y mando
+### 3. Botones y mando
 
 | Control | Acción |
 |---|---|
@@ -59,7 +75,7 @@
 
 ## **Uso en clase** { .seccion }
 
-### 4. Pantalla de inicio y barras laterales
+### 4. Inicio y barras laterales
 
 En la pantalla de inicio verás reloj, fecha, la **vista previa de la fuente** conectada y los iconos principales: **OPS**, **Navegador**, **Pizarra**, **Archivos**, **Apps** y **Compartir pantalla**.
 
@@ -80,7 +96,7 @@ A ambos lados hay una **barra de herramientas** con: fuente OPS, Inicio, **Anota
 !!! note "Cables"
     Usa cables certificados: máximo **3 m en HDMI** y **1,8 m en DisplayPort**.
 
-### 6. Pizarra digital (Whiteboard)
+### 6. Pizarra digital
 
 Pulsa **Pizarra** en el inicio o en la barra lateral.
 
@@ -104,11 +120,11 @@ Pulsa **Pizarra** en el inicio o en la barra lateral.
 - **USB**: guarda las páginas en una memoria **FAT32**.
 - **Correo**: envía las páginas con la app AquaMail.
 
-### 7. Anotar sobre cualquier contenido
+### 7. Anotar sobre todo
 
 Pulsa **Anotación** en la barra lateral: aparece una capa transparente para escribir sobre lo que se esté viendo (una web, un PDF, un vídeo o el portátil conectado). Al salir se guarda una **captura** en *Almacenamiento interno → Pictures → Screenshots*.
 
-### 8. Compartir pantalla sin cables
+### 8. Compartir sin cables
 
 | Herramienta | Qué hace |
 |---|---|
@@ -118,7 +134,7 @@ Pulsa **Anotación** en la barra lateral: aparece una capa transparente para esc
 !!! note "Red"
     Los dispositivos deben estar en la **misma red** que la pantalla.
 
-### 9. Aplicaciones incluidas
+### 9. Apps incluidas
 
 | App | Uso en el aula |
 |---|---|

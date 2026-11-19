@@ -1,14 +1,31 @@
-# 🎥 Vídeo y Streaming { .card }
+<div class="ateca-hero" markdown>
+
+![streaming](../assets/img/hero/video-streaming.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Vídeo y streaming · Aula ATECA</p>
+<h1>Vídeo y <span>streaming</span></h1>
+<p>Grabación, producción multicámara y emisión en directo con el equipo audiovisual del aula.</p>
+</div>
+<p class="ateca-hero__credito">Foto: <a href="https://commons.wikimedia.org/wiki/File:Nilicule%27s_streaming_live_at_http_rc.vc8000.jpg" target="_blank" rel="noopener">Remco Brink</a> · CC BY-SA 2.0 · Wikimedia Commons</p>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=wytUbvAdvYo" target="_blank" rel="noopener" title="Directo con varias cámaras (Luces, Cámara, Aprendo)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 13 min</span><span class="video-boton__titulo">Directo con varias cámaras</span><span class="video-boton__canal">Luces, Cámara, Aprendo</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=GRk4IuSTTe4" target="_blank" rel="noopener" title="ATEM Mini Pro para streaming y grabación (Danni Hdz)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 10 min</span><span class="video-boton__titulo">ATEM Mini Pro para streaming y grabación</span><span class="video-boton__canal">Danni Hdz</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=vsMRNnDq_RQ" target="_blank" rel="noopener" title="Entiende OBS en 5 minutos (Mitormento)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 6 min</span><span class="video-boton__titulo">Entiende OBS en 5 minutos</span><span class="video-boton__canal">Mitormento</span></span></a>
+</div>
 
 > Equipo del Aula ATECA para grabación, producción multicámara y emisión en directo: capturadora AverMedia, cámara Sony A6600, GoPro y switcher ATEM Mini Pro, junto con el software de edición/streaming.
 
-## Esquema de conexiones (producción multicámara) { .seccion }
+## Esquema de conexiones { .seccion }
 
-![Esquema de conexiones del ATEM Mini Pro](../assets/img/vid/atem-conexiones.svg){ width="800" }
+![Esquema de conexiones del ATEM Mini Pro](../assets/img/vid/atem-conexiones.svg){ .diagrama .off-glb }
 
 El ATEM Mini Pro es el centro de la producción: recibe hasta 4 fuentes HDMI y reparte la salida a grabación, streaming y monitor, sin necesidad de un PC intermedio.
 
-## 1. Capturadora AverMedia Live Lite { .seccion }
+## 1. Capturadora AverMedia { .seccion }
 
 Dispositivo de captura de vídeo por USB 2.0 para grabar/transmitir desde consolas, cámaras o PC en hasta 1080p a 60 fps, sin retardo perceptible.
 
@@ -39,7 +56,7 @@ Cámara de acción compacta y resistente (grabación 4K, resistente al agua sin 
 - Para planos estables, activa la estabilización de imagen (HyperSmooth) en los ajustes de vídeo.
 - Aprovecha el control por voz para empezar/parar grabación con las manos ocupadas (talleres, prácticas).
 
-## 4. ATEM Mini Pro (switcher de vídeo) { .seccion }
+## 4. ATEM Mini Pro { .seccion }
 
 Mezclador compacto para producciones multicámara en directo: permite conmutar entre varias fuentes HDMI con transiciones fluidas, grabar directamente en un disco USB y emitir en streaming sin necesidad de PC.
 
@@ -62,7 +79,7 @@ Mezclador compacto para producciones multicámara en directo: permite conmutar e
 !!! tip "Plató de croma"
     Para poner en marcha el croma del centro con el ATEM Mini Pro, consulta la guía paso a paso [ATEM Mini Pro (croma)](atem-mini-pro-croma.md).
 
-## 📚 Software de edición y streaming { .seccion }
+## 📚 Software { .seccion }
 
 - [OBS Studio](https://obsproject.com/es){target="_blank"} — Streaming y grabación en PC. **Manual completo** en esta misma web: [OBS Studio](obs.md) (instalación, escenas, fuentes, audio, atajos y plugins).
 - [OpenShot](https://www.openshot.org/es){target="_blank"} — Edición de vídeo libre y sencilla, ideal para montajes rápidos del alumnado.

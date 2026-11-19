@@ -1,4 +1,20 @@
-# 🖨️ Artillery Genius Pro *Guía de uso de la impresora FDM del aula* { .card }
+<div class="ateca-hero ateca-hero--producto" markdown>
+
+![Impresora 3D Artillery Genius Pro](../assets/img/imp/artillery-genius-pro.png){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Impresora 3D · Aula ATECA</p>
+<h1>Artillery <span>Genius Pro</span></h1>
+<p>La impresora FDM de batalla del aula: rápida de poner en marcha, nivelación automática y 220 × 220 × 250 mm.</p>
+</div>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=h9ESMj-5Hnk" target="_blank" rel="noopener" title="Empezar con la Artillery Genius Pro (npirtube)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 21 min</span><span class="video-boton__titulo">Empezar con la Artillery Genius Pro</span><span class="video-boton__canal">npirtube</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=PhYiOUoHdNc" target="_blank" rel="noopener" title="Calibrar la Artillery Genius Pro (Esdichi)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 6 min</span><span class="video-boton__titulo">Calibrar la Artillery Genius Pro</span><span class="video-boton__canal">Esdichi</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=Wz1bV_D67X4" target="_blank" rel="noopener" title="Ultimaker Cura paso a paso (D1nuz)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 18 min</span><span class="video-boton__titulo">Ultimaker Cura paso a paso</span><span class="video-boton__canal">D1nuz</span></span></a>
+</div>
 
 <div class="ficha-equipo" markdown>
 
@@ -23,7 +39,7 @@ Es la impresora **de batalla** del aula: abierta, rápida de poner en marcha y c
 - [ ] La impresora está sobre una mesa estable y nadie la va a mover durante la impresión.
 - [ ] Tienes el modelo en `.stl`, `.obj` o `.3mf` (diseñado por ti o descargado de un [repositorio de diseños](repositorios-disenos-3d.md)).
 
-## 1. Preparar el archivo en Ultimaker Cura { .seccion }
+## 1. Preparar en Cura { .seccion }
 
 1. Abre **Ultimaker Cura** y añade la impresora si es la primera vez: *Añadir impresora → Agregar una impresora no conectada en red → Artillery → **Artillery Genius Pro***. En versiones antiguas de Cura que no la incluyen, elige **Artillery Genius** y llámala "Genius Pro".
 2. Arrastra el modelo a la ventana. Colócalo apoyado sobre su cara más ancha y plana: cuanta más superficie toque la cama, menos soportes y más adherencia.
@@ -40,7 +56,7 @@ Es la impresora **de batalla** del aula: abierta, rápida de poner en marcha y c
 4. Pulsa **Segmentación** y revisa el tiempo y el material estimados. Usa la **vista previa por capas** para comprobar que no hay zonas "flotando" en el aire.
 5. Guarda el `.gcode` en la **tarjeta microSD** de la impresora. Usa un nombre corto y sin tildes (por ejemplo `llavero_grupo3.gcode`): la pantalla corta los nombres largos.
 
-## 2. Poner en marcha la impresora { .seccion }
+## 2. Puesta en marcha { .seccion }
 
 1. Enciende la impresora con el interruptor de la base y espera a que cargue la pantalla táctil.
 2. **Nivelación automática.** Desde el menú de nivelación de la pantalla, lanza la **auto-nivelación**: el sensor del cabezal palpa varios puntos de la cama y guarda el mapa. No es necesario repetirla en cada impresión, pero sí si alguien ha movido la impresora o la primera capa sale irregular.

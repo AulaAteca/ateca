@@ -1,4 +1,21 @@
-# 🌬️ SimulWind en Meta Quest 2 *Instalación y uso del simulador de aerogeneradores* { .card }
+<div class="ateca-hero" markdown>
+
+![Aerogeneradores en Pozo Izquierdo, Gran Canaria](../assets/img/hero/simulwind.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">AR / VR (gafas) · Aula ATECA</p>
+<h1>Simulador <span>SimulWind</span></h1>
+<p>Instalación y uso del simulador de mantenimiento de aerogeneradores en las Meta Quest 2, conectadas al PC.</p>
+</div>
+<p class="ateca-hero__credito">Foto: <a href="https://commons.wikimedia.org/wiki/File:230A6969_1.jpg" target="_blank" rel="noopener">ITC Comunicación (Instituto Tecnológico de Canarias)</a> · CC BY-SA 4.0 · Wikimedia Commons</p>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=scYLmIxXpcY" target="_blank" rel="noopener" title="Qué es SimulWind (AEEolica)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 2 min</span><span class="video-boton__titulo">Qué es SimulWind</span><span class="video-boton__canal">AEEolica</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=WCDsXP940zQ" target="_blank" rel="noopener" title="Tutorial de SimulWind paso a paso (AEEolica)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 12 min</span><span class="video-boton__titulo">Tutorial de SimulWind paso a paso</span><span class="video-boton__canal">AEEolica</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=CoZD-q9PmiY" target="_blank" rel="noopener" title="Webinar: introducción al simulador (AEEolica)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 69 min</span><span class="video-boton__titulo">Webinar: introducción al simulador</span><span class="video-boton__canal">AEEolica</span></span></a>
+</div>
 
 !!! info "OBJETIVOS"
     Esta guía explica cómo **instalar y ejecutar el simulador SimulWind**, de mantenimiento de aerogeneradores, en **todas las gafas Meta Quest 2** del centro.
@@ -17,7 +34,7 @@
 
     Según sus requisitos oficiales, **es una aplicación para PC VR** (procesador tipo Intel i9-9900K, 16 GB de RAM, NVIDIA RTX 2070 y 3 GB de disco). Por eso, en las Quest 2 se usa **conectando las gafas al PC** mediante **Quest Link** (por cable) o **Air Link** (Wi-Fi). Las gafas muestran la imagen y el PC hace los cálculos.
 
-## **1. Preparar el PC** { .seccion }
+## 1. Preparar el PC { .seccion }
 
 **1.1 Descargar SimulWind**: el profesorado facilita el instalador en la carpeta compartida del aula. Si hay que descargarlo de nuevo, se solicita en [simulwind.com](https://www.simulwind.com/) con un correo del centro, aceptando sus condiciones de uso y licencia. Instálalo en `C:\SimulWind` y crea un acceso directo en el escritorio.
 
@@ -30,7 +47,7 @@
 
 **1.4 SteamVR (solo si SimulWind lo pide al arrancar)**: instala **Steam** y, dentro de Steam, **SteamVR**. Se iniciará automáticamente cuando lo necesite el simulador.
 
-## **2. Conectar las gafas al PC** { .seccion }
+## 2. Conectar las gafas { .seccion }
 
 === "Quest Link (cable)"
 
@@ -47,7 +64,7 @@
 !!! tip "¿Cable o Wi-Fi?"
     En el aula, con varias gafas a la vez, el **cable** es más estable. Air Link solo funciona bien con una buena red de 5 GHz y pocos visores conectados a la vez.
 
-## **3. Ejecutar SimulWind** { .seccion }
+## 3. Ejecutar SimulWind { .seccion }
 
 1. Dentro del entorno de Quest Link, abre el **Escritorio** desde la barra inferior: verás la pantalla del PC.
 2. Ejecuta el acceso directo **SimulWind** del escritorio. Si se abre SteamVR, espera a que termine de cargar.
@@ -81,7 +98,7 @@
     }
     ```
 
-## **Problemas frecuentes** { .seccion }
+## Problemas frecuentes { .seccion }
 
 | Problema | Solución |
 |---|---|

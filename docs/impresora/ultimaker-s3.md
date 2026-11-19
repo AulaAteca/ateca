@@ -1,4 +1,20 @@
-# 🖨️ Ultimaker S3 *Guía de uso de la impresora profesional del aula* { .card }
+<div class="ateca-hero ateca-hero--producto" markdown>
+
+![Impresora 3D Ultimaker S3 del Aula ATECA](../assets/img/imp/ultimaker-s3.png){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Impresora 3D · Aula ATECA</p>
+<h1>Ultimaker <span>S3</span></h1>
+<p>La impresora de precisión del aula: doble extrusión, perfiles de material listos en Cura y filamento de 2,85 mm.</p>
+</div>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=-w_d3bJF2YI" target="_blank" rel="noopener" title="Imprimir una pieza en la Ultimaker (Tecnología de Fabricación (UR))"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 9 min</span><span class="video-boton__titulo">Imprimir una pieza en la Ultimaker</span><span class="video-boton__canal">Tecnología de Fabricación (UR)</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=G4G0sU5VMlI" target="_blank" rel="noopener" title="Gestionar y editar materiales (UltiMaker)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 3 min · inglés</span><span class="video-boton__titulo">Gestionar y editar materiales</span><span class="video-boton__canal">UltiMaker</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=LdWmIKNILxA" target="_blank" rel="noopener" title="Cargar material y print cores en la S3 (Pebblereka 3D)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 2 min · inglés</span><span class="video-boton__titulo">Cargar material y print cores en la S3</span><span class="video-boton__canal">Pebblereka 3D</span></span></a>
+</div>
 
 <div class="ficha-equipo" markdown>
 
@@ -25,7 +41,7 @@ Es la impresora **de precisión** del aula: cerrada por delante, muy fiable y co
 - [ ] Sabes qué *print core* hay montado en cada ranura (se ve en la pantalla, en *Material/Print core*): **AA** para materiales de construcción (PLA, Tough PLA, PETG, ABS…) y **BB** para soporte soluble (PVA).
 - [ ] Tienes el modelo en `.stl`, `.obj` o `.3mf`.
 
-## 1. Preparar el archivo en Ultimaker Cura { .seccion }
+## 1. Preparar en Cura { .seccion }
 
 1. En **Ultimaker Cura**, añade la impresora: *Añadir impresora → **UltiMaker S3***. Si está conectada a la red del aula, aparecerá en *Impresoras en red* y podrás enviarle los trabajos directamente.
 2. En la barra superior, indica **qué material y qué print core** hay en cada extrusor (si la impresora está en red, Cura lo lee solo).
@@ -36,7 +52,7 @@ Es la impresora **de precisión** del aula: cerrada por delante, muy fiable y co
     - **Por red:** botón *Imprimir a través de la red*.
     - **Por USB:** *Guardar en disco extraíble* (genera un `.ufp`, que incluye una miniatura de la pieza).
 
-## 2. Imprimir desde la pantalla táctil { .seccion }
+## 2. Imprimir { .seccion }
 
 1. Enciende la impresora con el interruptor trasero y espera a que arranque.
 2. Si el trabajo va por **USB**, conecta la memoria en el puerto frontal, pulsa **Imprimir** y elige el archivo. Si va **por red**, aparecerá en la cola: confírmalo en la pantalla o desde Cura.

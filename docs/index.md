@@ -1,10 +1,14 @@
-<section class="ateca-hero">
-  <div class="ateca-hero__texto">
-    <p class="ateca-hero__eyebrow">CIFP Villa de Agüimes · Aula ATECA</p>
-    <h1>Aula de <span>Tecnología Aplicada</span></h1>
-    <p>Un espacio que se parece a un entorno de trabajo real: equipos de los sectores productivos, simuladores y tecnología al servicio de todos los módulos profesionales.</p>
-  </div>
-</section>
+<div class="ateca-hero" markdown>
+
+![Tecnología Aplicada](assets/img/hero/inicio.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">CIFP Villa de Agüimes · Aula ATECA</p>
+<h1>Aula de <span>Tecnología Aplicada</span></h1>
+<p>Un espacio que se parece a un entorno de trabajo real: equipos de los sectores productivos, simuladores y tecnología al servicio de todos los módulos profesionales.</p>
+</div>
+
+</div>
 
 El **Aula ATECA** es el lugar del centro donde alumnado y profesorado de **cualquier familia profesional** pueden diseñar, fabricar, grabar, experimentar y presentar su trabajo con el mismo tipo de equipos que se usan en las empresas. No es un aula de informática ni un plató: es un espacio flexible que se reorganiza según el proyecto de cada grupo.
 
@@ -12,7 +16,7 @@ Nació dentro del **Plan de Modernización de la Formación Profesional**, en la
 
 Esta web reúne los **manuales de uso** de cada equipo del aula: cómo se enciende, cómo se configura, qué hacer cuando algo falla y cómo dejarlo listo para el siguiente grupo. Elige el equipo en el menú de la izquierda.
 
-## Cuatro espacios en una misma aula { .seccion }
+## Cuatro espacios { .seccion }
 
 El modelo ATECA organiza el aula en cuatro espacios según lo que se hace en cada uno:
 
@@ -25,7 +29,7 @@ El modelo ATECA organiza el aula en cuatro espacios según lo que se hace en cad
 
 ## Zonas de nuestra aula { .seccion }
 
-![Zonas del Aula ATECA: realidad virtual, fabricación 3D, radio, vídeo, imagen y domótica](assets/img/ateca/aula-ateca-zonas.png){ width="760" }
+![Zonas del Aula ATECA: realidad virtual, fabricación 3D, radio, vídeo, imagen y domótica](assets/img/ateca/aula-ateca-zonas.png){ .diagrama width="760" }
 
 En la práctica, esos cuatro espacios se reparten en seis zonas de trabajo: **realidad virtual y aumentada**, **diseño y fabricación 3D**, **radio y audio**, **vídeo y streaming** (con plató de croma), **edición de imagen e impresión** y **domótica**. Cada una tiene su propio apartado en el menú.
 

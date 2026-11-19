@@ -1,20 +1,25 @@
-# 🟩 ATEM Mini Pro (croma) *Guía de configuración del plató de croma paso a paso* { .card }
+<div class="ateca-hero" markdown>
 
-[:material-file-pdf-box: Descargar manual en PDF](../assets/pdf/atem-mini-pro-croma.pdf){ .md-button .md-button--primary download="atem-mini-pro-croma.pdf" style="display:table;margin:0 auto;" }
+![ATEM Mini Pro](../assets/img/hero/atem-croma.jpg){ .ateca-hero__img .off-glb }
 
-<div class="video-row">
-<figure>
-<iframe src="https://www.youtube-nocookie.com/embed/pCIjtsxb5SY" title="Cómo usar el ATEM Mini Pro (guía completa)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Cómo usar el ATEM Mini Pro (guía completa)</figcaption>
-</figure>
-<figure>
-<iframe src="https://www.youtube-nocookie.com/embed/UVcTbvX5AUc" title="Fondo verde con el ATEM Mini Pro" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Fondo verde con el ATEM Mini Pro</figcaption>
-</figure>
-<figure>
-<iframe src="https://www.youtube-nocookie.com/embed/f6ViRCaBzlY" title="OBS con ATEM Mini Pro para directos (inglés)" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>OBS con ATEM Mini Pro para directos (inglés)</figcaption>
-</figure>
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Vídeo y streaming · Aula ATECA</p>
+<h1>Plató de croma <span>ATEM Mini Pro</span></h1>
+<p>Guía paso a paso para poner en marcha el croma del centro: la persona delante del fondo verde aparece sobre la imagen que elijas.</p>
+</div>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=pCIjtsxb5SY" target="_blank" rel="noopener" title="ATEM Mini Pro: guía completa (VIDEOBRO)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 24 min</span><span class="video-boton__titulo">ATEM Mini Pro: guía completa</span><span class="video-boton__canal">VIDEOBRO</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=o3MIQvfDDsQ" target="_blank" rel="noopener" title="Configurar el croma en el ATEM (Didac Roure)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 5 min</span><span class="video-boton__titulo">Configurar el croma en el ATEM</span><span class="video-boton__canal">Didac Roure</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=hhvUhF4vo3c" target="_blank" rel="noopener" title="Manejar ATEM Software Control (Caramba Films)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 17 min</span><span class="video-boton__titulo">Manejar ATEM Software Control</span><span class="video-boton__canal">Caramba Films</span></span></a>
+</div>
+
+<div class="descarga-pdf" markdown>
+
+[:material-file-pdf-box: Descargar manual en PDF](../assets/pdf/atem-mini-pro-croma.pdf){ .md-button .md-button--primary download="atem-mini-pro-croma.pdf" }
+
 </div>
 
 > Esta guía explica cómo poner en marcha el **plató de croma** del centro con el mezclador de vídeo **Blackmagic ATEM Mini Pro** y el programa **ATEM Software Control**. Al terminar, la persona situada delante del fondo verde aparecerá sobre la imagen de fondo que elijamos (un paisaje, un cartel, una diapositiva…), igual que en el parte del tiempo de un informativo.
@@ -35,7 +40,7 @@ Las fotografías están tomadas en el propio plató. Los elementos importantes a
 | Cable HDMI largo (está en el Aula ATECA) | Lleva la salida HDMI OUT de la ATEM a una pantalla o televisor. |
 | Pantalla o televisor | Muestra la multivista (Anticipo y Programa) o la imagen final. |
 
-## 2. Conceptos básicos: Anticipo y Programa { .seccion }
+## 2. Anticipo y Programa { .seccion }
 
 El ATEM Mini Pro funciona igual que la mesa de realización de un estudio de televisión. El realizador trabaja siempre con dos señales a la vista:
 
@@ -61,7 +66,7 @@ Si conectamos la salida HDMI OUT a una pantalla y elegimos la vista **M/V** (mul
 
 ## 3. Puesta en marcha { .seccion }
 
-### Paso 1. Encender la iluminación del croma
+### Paso 1. Iluminación
 
 <div class="dos-columnas" markdown>
 
@@ -82,7 +87,7 @@ Una iluminación **uniforme** del fondo verde, sin sombras ni zonas oscuras, es 
 
 *Figura 2. Interruptor de la luz de los proyectores.*
 
-### Paso 2. Encender el alargador de la consola
+### Paso 2. Alargador
 
 La ATEM Mini Pro recibe corriente a través de un alargador (base de enchufes Nanocable) que está en el suelo, junto al zócalo del croma. Activamos su interruptor: se iluminan los botones de la consola y el botón **1** se pone en rojo.
 
@@ -101,11 +106,11 @@ La ATEM Mini Pro recibe corriente a través de un alargador (base de enchufes Na
 | **1** | Toma de pared donde está enchufado el alargador (cable blanco). |
 | **2** | Alargador en el suelo, junto al zócalo del croma. |
 
-### Paso 3. Encender el portátil
+### Paso 3. Portátil
 
 Encendemos el portátil **ASUS** e iniciamos sesión. Todavía no hace falta abrir ningún programa: primero revisaremos las conexiones.
 
-## 4. Conexiones de la ATEM Mini Pro { .seccion }
+## 4. Conexiones de la ATEM { .seccion }
 
 Todas las conexiones están en la parte trasera de la consola. Por defecto, la cámara de techo ya está conectada a **HDMI 1** y el portátil y la ATEM ya están unidos por el **cable USB blanco**. Antes de empezar, comprobamos que todo está en su sitio:
 
@@ -140,7 +145,7 @@ Todas las conexiones están en la parte trasera de la consola. Por defecto, la c
 
 *Figura 6. El cable USB blanco une la ATEM con el portátil.*
 
-### Paso 4. Conectar la pantalla y seleccionar la entrada
+### Paso 4. Pantalla y entrada
 
 1. Conectamos un extremo del cable HDMI largo (está en el Aula ATECA) al puerto **HDMI OUT** de la ATEM.
 2. Conectamos el otro extremo a un puerto HDMI de la pantalla o televisor. Nos fijamos en qué puerto lo colocamos (HDMI 1, HDMI 2…).
@@ -150,7 +155,7 @@ Todas las conexiones están en la parte trasera de la consola. Por defecto, la c
 !!! note
     Si solo se ve una imagen a pantalla completa en lugar de los cuadrantes, pulsamos el botón **M/V** de la consola (apartado 7).
 
-## 5. Encuadre de la cámara con el mando { .seccion }
+## 5. Encuadre de la cámara { .seccion }
 
 <div class="dos-columnas" markdown>
 
@@ -175,7 +180,7 @@ La cámara de techo es motorizada y se controla con su mando. Nos colocamos dela
 !!! warning "Objetivo del encuadre"
     Que **no se vea nada que no sea verde** (ni paredes, ni suelo, ni el zócalo). Todo lo que no sea verde no se eliminará y aparecerá encima del fondo.
 
-## 6. Configuración en ATEM Software Control { .seccion }
+## 6. ATEM Software Control { .seccion }
 
 ### Paso 5. Abrir el programa
 
@@ -185,7 +190,7 @@ En el portátil abrimos **ATEM Software Control** con el icono anclado en la bar
 
 *Figura 8. Icono de ATEM Software Control en la barra de tareas (1).*
 
-### Paso 6. Seleccionar Programa y Anticipo
+### Paso 6. Programa y Anticipo
 
 En la pestaña **Mezclador** (abajo) vemos dos filas de botones: la de arriba es **Programa** y la de abajo es **Anticipo**.
 
@@ -204,7 +209,7 @@ En la pestaña **Mezclador** (abajo) vemos dos filas de botones: la de arriba es
 !!! tip
     Se pueden usar otras fuentes conectándolas a HDMI 2, 3 y 4 (botones CAM2, CAM3 y CAM4): otra cámara o incluso un PC reproduciendo un vídeo, que también podría servir de fondo del croma.
 
-### Paso 7. Configurar el efecto de croma
+### Paso 7. Efecto de croma
 
 En el menú de la derecha abrimos **Paneles** y buscamos el bloque **Composición previa 1** (la llave o *key* 1 de la consola).
 
@@ -236,7 +241,7 @@ Con *Primer plano* en **Camera 1**, pulsamos **Muestra** y después **Anticipo**
 !!! tip "Ajuste fino"
     Si quedan bordes verdes o zonas que parpadean, retoca los deslizadores de **Composición → Primer plano** y **Fondo**, o repite la muestra en otra zona del verde. Hacer los ajustes con la persona ya colocada delante del fondo da mejores resultados.
 
-### Paso 8. Activar el croma: ON AIR y deslizador
+### Paso 8. Activar: ON AIR
 
 1. Pulsamos el botón **ON AIR** que está sobre **KEY 1** en «Próxima transición» (número 3 de la figura 9). La composición de croma queda activa en el aire.
 2. Movemos el **deslizador de transición** (número 4) hasta el otro extremo, o pulsamos **AUTO**.
@@ -245,7 +250,7 @@ Con *Primer plano* en **Camera 1**, pulsamos **Muestra** y después **Anticipo**
 !!! info
     Es el mismo funcionamiento de un estudio de televisión: se prepara todo en Anticipo, se comprueba y, cuando está listo, se lanza a Programa con una transición.
 
-### Paso 9. Poner las imágenes de fondo
+### Paso 9. Imágenes de fondo
 
 Las imágenes de fondo se cargan en la pestaña **Multimedia** (abajo). La ATEM las guarda en su memoria interna y el reproductor **MP1** muestra la que elijamos.
 
@@ -264,7 +269,7 @@ Las imágenes de fondo se cargan en la pestaña **Multimedia** (abajo). La ATEM 
 - El botón **Capturar** guarda como imagen el fotograma que hay en ese momento en Programa.
 - Para **cambiar de fondo** durante la grabación basta con elegir otra imagen en el reproductor multimedia: el cambio se ve al instante.
 
-## 7. Manejo desde la consola física { .seccion }
+## 7. Consola física { .seccion }
 
 Una vez configurado el croma con el software, la consola permite trabajar sin tocar el portátil:
 

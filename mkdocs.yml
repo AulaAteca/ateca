@@ -7,6 +7,8 @@ theme:
    name: material
    language: es
    # logo: assets/favicon.svg
+   features:
+      - navigation.expand
    palette:
       - scheme: default
         primary: custom
@@ -22,12 +24,12 @@ theme:
            name: Modo claro
 nav:
    - 🏫 Inicio: index.md
-   - 🕶️ Gafas VR / AR:
+   - 🕶️ AR / VR (gafas):
         - VR y AR en el aula: gafas/realidad-virtual-aumentada.md
-        - Manual Quest 2: gafas/meta-quest-2.md
-        - SimulWind en Quest 2: gafas/simulwind.md
+        - Meta Quest 2: gafas/meta-quest-2.md
         - Apps VR gratuitas: gafas/apps-vr-gratuitas.md
-        - Manual de trabajo 2026: gafas/manual-trabajo-2026.md
+        - SimulWind: gafas/simulwind.md
+        - Onirix Studio (AR): gafas/onirix.md
    - 🖥️ Pantalla interactiva:
         - Newline Lyra TT-8621Q: pantalla/newline-lyra.md
    - 🖨️ Impresora 3D:
@@ -58,8 +60,6 @@ extra_css:
    - assets/css/practica.css
    - assets/css/videos.css
 
-extra_javascript:
-   - assets/javascripts/nav-toggle.js
 
 markdown_extensions:
    - admonition

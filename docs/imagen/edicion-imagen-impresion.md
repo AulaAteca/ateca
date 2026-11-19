@@ -1,12 +1,29 @@
-# 🖼️ Edición de Imagen e Impresión { .card }
+<div class="ateca-hero" markdown>
+
+![e impresión](../assets/img/hero/imagen.jpg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Imagen · Aula ATECA</p>
+<h1>Edición de imagen <span>e impresión</span></h1>
+<p>Retoque fotográfico, diseño vectorial y preparación de artes finales con software libre y online.</p>
+</div>
+<p class="ateca-hero__credito">Foto: <a href="https://commons.wikimedia.org/wiki/File:Penciling_on_Wacom_Cintiq_13HD_by_David_Revoy.jpg" target="_blank" rel="noopener">David Revoy</a> · CC BY 4.0 · Wikimedia Commons</p>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=X61yReOfU0k" target="_blank" rel="noopener" title="GIMP en 26 minutos (Alva Majo)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 26 min</span><span class="video-boton__titulo">GIMP en 26 minutos</span><span class="video-boton__canal">Alva Majo</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=TKpchk09Rqg" target="_blank" rel="noopener" title="Inkscape en 15 minutos (Alva Majo)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 15 min</span><span class="video-boton__titulo">Inkscape en 15 minutos</span><span class="video-boton__canal">Alva Majo</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=-V_REygriTs" target="_blank" rel="noopener" title="10 pasos para usar Photopea (Ana Kashmir)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 14 min</span><span class="video-boton__titulo">10 pasos para usar Photopea</span><span class="video-boton__canal">Ana Kashmir</span></span></a>
+</div>
 
 > El Aula ATECA no dispone de hardware específico en esta categoría; el valor está en el software (online y de escritorio) para retoque fotográfico, diseño vectorial y preparación de artes finales para impresión.
 
-## ¿Qué herramienta uso? (guía rápida) { .seccion }
+## ¿Qué herramienta uso? { .seccion }
 
-![Árbol de decisión de software de edición de imagen](../assets/img/ima/imagen-arbol-decision.svg){ width="800" }
+![Árbol de decisión de software de edición de imagen](../assets/img/ima/imagen-arbol-decision.svg){ .diagrama .off-glb }
 
-## 1. Software online (sin instalación) { .seccion }
+## 1. Software online { .seccion }
 
 ### Photopea
 
@@ -28,9 +45,9 @@ Editor vectorial online centrado en SVG, útil para preparar logos y trazados qu
 
 - [boxy-svg.com](https://boxy-svg.com/app){target="_blank"}
 
-## 2. Software de escritorio { .seccion }
+## 2. Escritorio { .seccion }
 
-### GIMP (edición rasterizada)
+### GIMP (raster)
 
 Alternativa libre y gratuita a Photoshop, completa para retoque fotográfico, composición por capas y exportación en múltiples formatos.
 
@@ -38,7 +55,7 @@ Alternativa libre y gratuita a Photoshop, completa para retoque fotográfico, co
 - Uso recomendado: retoque de fotografías para la web del centro, carteles, materiales de proyectos de innovación.
 - Formato de trabajo nativo: `.xcf` (guarda capas y ajustes); exporta a `.png`/`.jpg` solo al finalizar.
 
-### Inkscape (diseño vectorial)
+### Inkscape (vectorial)
 
 Alternativa libre y gratuita a Illustrator, para logotipos, ilustraciones e infografías vectoriales.
 
@@ -46,7 +63,7 @@ Alternativa libre y gratuita a Illustrator, para logotipos, ilustraciones e info
 - Uso recomendado: preparación de archivos vectoriales para corte láser/vinilo o para acompañar diseños 3D (grabados, etiquetas).
 - Formato de trabajo nativo: `.svg` (escalable sin pérdida de calidad, ideal para logotipos que se usarán en varios tamaños).
 
-## 3. Buenas prácticas en el aula { .seccion }
+## 3. Buenas prácticas { .seccion }
 
 - Prioriza las herramientas **online** (Photopea, Pixlr, Boxy SVG) en equipos sin privilegios de instalación.
 - Exporta siempre en un formato editable (`.xcf`, `.svg`, `.psd`) además del formato final (`.png`, `.jpg`, `.pdf`) para poder retocar el trabajo más adelante.

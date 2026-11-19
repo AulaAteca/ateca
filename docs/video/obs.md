@@ -1,4 +1,21 @@
-# 🎬 OBS Studio { .card }
+<div class="ateca-hero" markdown>
+
+![Studio](../assets/img/hero/obs.svg){ .ateca-hero__img .off-glb }
+
+<div class="ateca-hero__texto">
+<p class="ateca-hero__eyebrow">Vídeo y streaming · Aula ATECA</p>
+<h1>OBS <span>Studio</span></h1>
+<p>Software libre para grabar y emitir en directo: escenas, fuentes, audio, croma y atajos.</p>
+</div>
+
+</div>
+
+<div class="video-botones">
+<a class="video-boton" href="https://www.youtube.com/watch?v=tj6f9jtbugw" target="_blank" rel="noopener" title="OBS Studio para principiantes (CyberPlus)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 20 min</span><span class="video-boton__titulo">OBS Studio para principiantes</span><span class="video-boton__canal">CyberPlus</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=jdhQpRZRSLc" target="_blank" rel="noopener" title="Pantalla verde (croma) en OBS (Luces, Cámara, Aprendo)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 14 min</span><span class="video-boton__titulo">Pantalla verde (croma) en OBS</span><span class="video-boton__canal">Luces, Cámara, Aprendo</span></span></a>
+<a class="video-boton" href="https://www.youtube.com/watch?v=BIgbfxbrDNY" target="_blank" rel="noopener" title="Tu primer directo con OBS (Luces, Cámara, Aprendo)"><span class="video-boton__play"></span><span class="video-boton__texto"><span class="video-boton__meta">Vídeo · 38 min</span><span class="video-boton__titulo">Tu primer directo con OBS</span><span class="video-boton__canal">Luces, Cámara, Aprendo</span></span></a>
+</div>
+
 > **OBS Studio** (Open Broadcaster Software) es software libre, gratuito y de código abierto para grabación de vídeo y retransmisión en directo, considerado el estándar de la industria entre creadores de contenido y streamers.
 
 ## 1. Instalar OBS { .seccion }
